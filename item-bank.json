@@ -1,0 +1,2640 @@
+[
+  {
+    "id": "ES-1-01",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher explains to students that Earth's magnetic field protects us from harmful solar radiation. Which layer of Earth is responsible for generating this magnetic field?",
+    "visual": null,
+    "options": [
+      "The crust",
+      "The mantle",
+      "The outer core",
+      "The inner core"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-2-01",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A mountain range forms along the boundary where two continental plates collide. Which process best explains this?",
+    "visual": null,
+    "options": [
+      "Subduction of one plate beneath the other",
+      "Compression and uplift as neither plate subducts easily",
+      "Volcanic activity along a divergent boundary",
+      "Transform faulting causing horizontal displacement"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-2-02",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class measures a local stream each month from March through June. Their results are displayed in the graph below.\n\n\n\nBased on the graph, which conclusion is best supported?",
+    "visual": {
+      "type": "line_chart",
+      "title": "Stream Speed vs. Sediment Deposited",
+      "x_axis": {
+        "label": "Month",
+        "values": [
+          "March",
+          "April",
+          "May",
+          "June"
+        ]
+      },
+      "series": [
+        {
+          "label": "Stream speed (m/s)",
+          "values": [
+            1.8,
+            1.3,
+            0.8,
+            0.5
+          ],
+          "axis": "left"
+        },
+        {
+          "label": "Sediment deposited (kg)",
+          "values": [
+            8,
+            15,
+            23,
+            28
+          ],
+          "axis": "right"
+        }
+      ]
+    },
+    "options": [
+      "Faster-moving water deposits more sediment than slower-moving water.",
+      "As the stream slows down, it deposits more sediment.",
+      "The total amount of sediment in the stream increases each month.",
+      "Stream speed and sediment deposition are not related."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-3-01",
+    "domain": "Earth Science",
+    "subtopic": "ES-3",
+    "subtopic_label": "Earth History",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A scientist discovers fossilized shells in a rock layer on top of a mountain. What does this evidence most likely indicate?",
+    "visual": null,
+    "options": [
+      "The shells were carried to the mountaintop by wind.",
+      "The rock layer was once beneath a body of water.",
+      "The fossils formed after the mountain was already above sea level.",
+      "Ancient organisms lived at very high altitudes."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-3-02",
+    "domain": "Earth Science",
+    "subtopic": "ES-3",
+    "subtopic_label": "Earth History",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "During a lesson on fossils, a teacher shows students a diagram of undisturbed sedimentary rock layers. Simple marine organisms appear in the bottom layer, and more complex organisms appear in upper layers. A student asks why the oldest fossils are always at the bottom. Which principle should the teacher use to explain this?",
+    "visual": null,
+    "options": [
+      "The law of conservation of energy",
+      "The principle of superposition",
+      "The law of cross-cutting relationships",
+      "The principle of uniformitarianism"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-4-01",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What causes the Moon to appear to change shape (phases) as seen from Earth?",
+    "visual": null,
+    "options": [
+      "Earth's shadow falls on different parts of the Moon.",
+      "The Moon produces different amounts of light at different times.",
+      "The Moon rotates so that different surfaces face Earth.",
+      "Different amounts of the Moon's sunlit side are visible from Earth."
+    ],
+    "correct": 3
+  },
+  {
+    "id": "ES-4-02",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "During a lesson on the Moon, a student says, \"If we always see the same side, the Moon must not spin at all.\" How should the teacher correct this misconception?",
+    "visual": null,
+    "options": [
+      "Explain that the Moon does not rotate on its axis, which is why we see the same side.",
+      "Explain that the Moon rotates, but its rotation period matches the time it takes to orbit Earth.",
+      "Explain that Earth's gravity holds the Moon in place and prevents it from spinning.",
+      "Explain that the Moon is too far away for observers to notice its rotation."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-4-03",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 3,
+    "stem": "A group of students wants to investigate how the distance of a planet from the Sun affects its surface temperature. They plan to use heat lamps and thermometers. Which variable should they change in their investigation?",
+    "visual": null,
+    "options": [
+      "The brightness of the heat lamp",
+      "The distance between the heat lamp and the thermometer",
+      "The type of thermometer used",
+      "The amount of time the lamp is turned on"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-5-01",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What is the primary reason that Earth experiences seasons?",
+    "visual": null,
+    "options": [
+      "Earth's distance from the Sun changes throughout the year.",
+      "The Sun produces more energy during summer months.",
+      "Earth's axis is tilted relative to its orbital plane.",
+      "The Moon's gravitational pull shifts weather patterns."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-5-02",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A teacher asks students to identify the stage of the water cycle in which water vapor changes to liquid water. Which term should the students select?",
+    "visual": null,
+    "options": [
+      "Evaporation",
+      "Condensation",
+      "Precipitation",
+      "Transpiration"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-5-03",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class records the high temperature and hours of daylight in their city on the first of each month for a full year. They notice that the longest day occurs in June, but the highest temperatures occur in July or August. Which best explains this delay?",
+    "visual": null,
+    "options": [
+      "The thermometers are less accurate during summer months.",
+      "Land and water take time to warm up and cool down, creating a lag.",
+      "The Sun is actually closer to Earth in July than in June.",
+      "Cloud cover is greater in June, blocking some of the Sun's energy."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-1-02",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": "INQ-4",
+    "difficulty": 2,
+    "stem": "A teacher wants students to understand that Earth's systems are connected. Which statement best describes the relationship between the atmosphere and the hydrosphere?",
+    "visual": null,
+    "options": [
+      "They are separate systems that do not affect each other.",
+      "Water moves between them — for example, water evaporates from oceans into the atmosphere.",
+      "The hydrosphere includes only oceans and lakes, not water in the atmosphere.",
+      "The atmosphere affects the hydrosphere, but the hydrosphere does not affect the atmosphere."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-1-03",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher holds up a hard-boiled egg and tells students it is a model of Earth. Which part of the egg best represents Earth's crust?",
+    "visual": null,
+    "options": [
+      "The yolk",
+      "The egg white",
+      "The thin shell",
+      "The membrane between the white and the shell"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-1-04",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Most of Earth's freshwater is found in which form?",
+    "visual": null,
+    "options": [
+      "Rivers and lakes",
+      "Oceans",
+      "Ice caps and glaciers",
+      "Underground aquifers"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-1-05",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student claims that the atmosphere is mostly oxygen because humans need oxygen to breathe. How should the teacher respond?",
+    "visual": null,
+    "options": [
+      "Agree, and explain that oxygen makes up about 78% of the atmosphere.",
+      "Explain that nitrogen makes up about 78% of the atmosphere, with oxygen at about 21%.",
+      "Explain that carbon dioxide is the most common gas because plants need it for photosynthesis.",
+      "Explain that the atmosphere is mostly water vapor, especially near the equator."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-1-06",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which statement best explains why the oceanic crust is denser than the continental crust?",
+    "visual": null,
+    "options": [
+      "Oceanic crust is thicker than continental crust.",
+      "Oceanic crust is made mostly of basalt, while continental crust is made mostly of granite.",
+      "Water pressure compresses the oceanic crust over time.",
+      "Continental crust contains more iron than oceanic crust."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-1-07",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": "INQ-3",
+    "difficulty": 2,
+    "stem": "A community is deciding where to build new homes. Which Earth science information would be most important for determining whether a location is safe from flooding?",
+    "visual": null,
+    "options": [
+      "The average annual temperature of the area",
+      "The types of fossils found in nearby rock layers",
+      "The elevation and proximity to floodplains and waterways",
+      "The distance from the nearest volcano"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-1-08",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A teacher shows students the following diagram of Earth's water distribution:\n\n\n\nA student says, \"We should just melt glaciers to solve water shortages.\" Based on the diagram, which response best addresses this idea?",
+    "visual": {
+  "type": "pie_chart",
+  "title": "Earth's Water Distribution",
+  "segments": [
+    { "label": "Oceans", "value": 97.2, "display": "97.2%" },
+    { "label": "Ice caps/glaciers", "value": 2.1, "display": "2.1%" },
+    { "label": "Groundwater", "value": 0.6, "display": "0.6%" },
+    { "label": "Freshwater lakes/rivers", "value": 0.01, "display": "0.01%" },
+    { "label": "Other", "value": 0.09, "display": "0.09%" }
+  ]
+},
+    "options": [
+      "Melting glaciers would provide plenty of water since they hold 97% of Earth's water.",
+      "Glaciers hold a small share of total water, and melting them would raise sea levels and disrupt ecosystems.",
+      "The diagram shows that groundwater is a larger source than glaciers, so we should drill more wells instead.",
+      "Freshwater lakes and rivers already provide enough water for everyone."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-1-09",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": "INQ-4",
+    "difficulty": 3,
+    "stem": "Which example best illustrates an interaction between Earth's geosphere and biosphere?",
+    "visual": null,
+    "options": [
+      "Ocean currents distributing heat around the planet",
+      "Plant roots breaking apart rocks as they grow into cracks",
+      "Water evaporating from a lake on a warm day",
+      "Wind carrying sand across a desert"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-1-10",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which layer of Earth's atmosphere is closest to the surface and contains most of the weather?",
+    "visual": null,
+    "options": [
+      "Stratosphere",
+      "Mesosphere",
+      "Troposphere",
+      "Thermosphere"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-1-11",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student asks why it is warmer inside a greenhouse than outside on a sunny day. Which explanation is most accurate?",
+    "visual": null,
+    "options": [
+      "The glass creates heat energy from sunlight.",
+      "Sunlight passes through the glass, warms surfaces inside, and the glass traps the warm air from escaping.",
+      "The glass filters out cold air and only lets warm air in.",
+      "The plants inside the greenhouse produce heat through photosynthesis."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-1-12",
+    "domain": "Earth Science",
+    "subtopic": "ES-1",
+    "subtopic_label": "Structure of Earth's System",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which of the following is a characteristic of Earth's mantle?",
+    "visual": null,
+    "options": [
+      "It is completely liquid throughout.",
+      "It is a thin, rigid layer on Earth's surface.",
+      "It is a thick layer of hot rock that can flow slowly over time.",
+      "It is made entirely of iron and nickel."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-2-03",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which process is primarily responsible for breaking large rocks into smaller pieces over time?",
+    "visual": null,
+    "options": [
+      "Erosion",
+      "Deposition",
+      "Weathering",
+      "Metamorphism"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-2-04",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher wants students to understand the difference between weathering and erosion. Which pair of examples correctly illustrates the difference?",
+    "visual": null,
+    "options": [
+      "Weathering: a river carrying sand downstream; Erosion: ice cracking a rock",
+      "Weathering: water freezing in a rock crack and splitting the rock; Erosion: wind carrying soil to a new location",
+      "Weathering: a volcano erupting; Erosion: an earthquake shifting the ground",
+      "Weathering: sand piling up at a river's mouth; Erosion: gravity pulling rocks downhill"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-2-05",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "At a divergent plate boundary on the ocean floor, what is most likely to occur?",
+    "visual": null,
+    "options": [
+      "Two plates collide and form a mountain range.",
+      "Magma rises to fill the gap as plates move apart, forming new oceanic crust.",
+      "One plate slides under another, creating a deep trench.",
+      "The plates grind past each other horizontally, causing earthquakes."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-2-06",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A class is studying the rock cycle. Which sequence correctly describes how sedimentary rock can become metamorphic rock?",
+    "visual": null,
+    "options": [
+      "Sedimentary rock melts, then cools and hardens.",
+      "Sedimentary rock is exposed to heat and pressure without melting.",
+      "Sedimentary rock is broken into sediment by weathering, then compressed.",
+      "Sedimentary rock is carried by erosion to a volcano, where it is reformed."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-2-07",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 2,
+    "stem": "A student wants to investigate whether the type of rock affects how quickly it weathers. She places three different rock types in separate jars of vinegar and measures mass loss after one week. What is the independent variable in this experiment?",
+    "visual": null,
+    "options": [
+      "The amount of mass lost",
+      "The type of vinegar used",
+      "The type of rock",
+      "The time the rocks spend in vinegar"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-2-08",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What provides the energy that drives the water cycle?",
+    "visual": null,
+    "options": [
+      "Earth's magnetic field",
+      "The Moon's gravitational pull",
+      "The Sun",
+      "Wind patterns"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-2-09",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A teacher shows students a map of earthquake locations around the world. The earthquakes are concentrated in narrow bands rather than spread evenly. What does this pattern best support?",
+    "visual": null,
+    "options": [
+      "Earthquakes happen randomly and cannot be predicted.",
+      "Earthquakes occur most often near the equator due to the Sun's heat.",
+      "Earthquakes are concentrated along plate boundaries.",
+      "Earthquakes happen only in countries with mountains."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-2-10",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": "INQ-4",
+    "difficulty": 3,
+    "stem": "Which of the following best describes why the rock cycle is considered a \"cycle\"?",
+    "visual": null,
+    "options": [
+      "All rocks eventually become the same type over time.",
+      "Rocks can be transformed from one type to another through various processes, and the processes repeat.",
+      "Rocks always follow the same sequence: igneous to sedimentary to metamorphic.",
+      "Once a rock forms, it stays the same type forever."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-2-11",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which of the following is the best evidence that the continents were once connected?",
+    "visual": null,
+    "options": [
+      "All continents have similar weather patterns today.",
+      "The same types of fossils have been found on continents that are now separated by oceans.",
+      "All continents are surrounded by the same type of ocean water.",
+      "The continents are all approximately the same size."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-2-12",
+    "domain": "Earth Science",
+    "subtopic": "ES-2",
+    "subtopic_label": "Earth Processes",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "During a unit on soil, a teacher explains that soil forms over long periods of time. Which process contributes most directly to the formation of soil from bedrock?",
+    "visual": null,
+    "options": [
+      "Volcanic eruptions that deposit ash on the surface",
+      "The slow breakdown of rock by water, ice, wind, and living organisms",
+      "Earthquakes that shake loose rock from mountainsides",
+      "Rivers depositing sediment in new locations"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-3-03",
+    "domain": "Earth Science",
+    "subtopic": "ES-3",
+    "subtopic_label": "Earth History",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What do scientists learn from studying fossils?",
+    "visual": null,
+    "options": [
+      "The current temperature of Earth's interior",
+      "What kinds of living things existed in the past",
+      "How old the Sun is",
+      "What the weather will be like next year"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-3-04",
+    "domain": "Earth Science",
+    "subtopic": "ES-3",
+    "subtopic_label": "Earth History",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher explains that the three main types of rocks are igneous, sedimentary, and metamorphic. Which type of rock forms when melted rock cools and hardens?",
+    "visual": null,
+    "options": [
+      "Sedimentary",
+      "Metamorphic",
+      "Igneous",
+      "Mineral"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-3-05",
+    "domain": "Earth Science",
+    "subtopic": "ES-3",
+    "subtopic_label": "Earth History",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A geologist examines a cliff face and sees a layer of igneous rock cutting vertically through several horizontal sedimentary layers. Which conclusion is best supported?",
+    "visual": null,
+    "options": [
+      "The sedimentary layers are younger than the igneous rock.",
+      "The igneous rock formed after the sedimentary layers were deposited.",
+      "The sedimentary layers and the igneous rock formed at the same time.",
+      "The igneous rock was deposited before the sedimentary layers."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-3-06",
+    "domain": "Earth Science",
+    "subtopic": "ES-3",
+    "subtopic_label": "Earth History",
+    "inquiry_tag": "INQ-3",
+    "difficulty": 2,
+    "stem": "Scientists estimate that Earth is approximately 4.6 billion years old. Which type of evidence is most commonly used to determine this age?",
+    "visual": null,
+    "options": [
+      "The thickness of sedimentary rock layers in the Grand Canyon",
+      "The rate at which fossils decompose in different climates",
+      "The radioactive decay of elements found in rocks and meteorites",
+      "The distance between Earth and other planets in the solar system"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-3-07",
+    "domain": "Earth Science",
+    "subtopic": "ES-3",
+    "subtopic_label": "Earth History",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class examines a diagram of rock layers at two different locations 100 miles apart. Both locations contain a distinctive layer of volcanic ash at the same depth. A teacher asks what the ash layer tells us. Which student response is most accurate?",
+    "visual": null,
+    "options": [
+      "\"The two locations must have been next to each other when the volcano erupted.\"",
+      "\"The ash layer helps us match the age of the rock layers at both locations.\"",
+      "\"The ash means both locations used to be volcanoes.\"",
+      "\"The ash layer proves the rocks at both locations are igneous.\""
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-3-08",
+    "domain": "Earth Science",
+    "subtopic": "ES-3",
+    "subtopic_label": "Earth History",
+    "inquiry_tag": null,
+    "difficulty": 3,
+    "stem": "Which of the following is the best explanation for why certain organisms appear in the fossil record for a period of time and then disappear?",
+    "visual": null,
+    "options": [
+      "The organisms moved to a different part of the world where fossils cannot form.",
+      "Environmental changes occurred that the organisms could not survive, leading to extinction.",
+      "Scientists have not yet found the fossils from later time periods.",
+      "The organisms evolved into rocks and minerals over time."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-4-04",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which object in our solar system produces its own light?",
+    "visual": null,
+    "options": [
+      "The Moon",
+      "Earth",
+      "The Sun",
+      "Mars"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-4-05",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher asks students to put the following in order from smallest to largest: galaxy, star, planet, universe. Which order is correct?",
+    "visual": null,
+    "options": [
+      "Star, planet, galaxy, universe",
+      "Planet, star, galaxy, universe",
+      "Planet, galaxy, star, universe",
+      "Star, galaxy, planet, universe"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-4-06",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student says, \"Summer happens because Earth is closer to the Sun.\" What is the main problem with this explanation?",
+    "visual": null,
+    "options": [
+      "Earth's distance from the Sun does not change during the year.",
+      "If distance caused seasons, both hemispheres would have summer at the same time, but they don't.",
+      "The Sun does not produce enough heat to affect Earth's temperature.",
+      "Summer is caused by the Moon blocking cold air from space."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-4-07",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "What causes a solar eclipse?",
+    "visual": null,
+    "options": [
+      "Earth passes between the Sun and the Moon, casting a shadow on the Moon.",
+      "The Moon passes between Earth and the Sun, blocking sunlight from reaching part of Earth.",
+      "The Sun moves behind Earth for a brief period.",
+      "Earth's atmosphere bends sunlight away from the surface."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-4-08",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A class is studying the inner and outer planets of our solar system. Which characteristic best distinguishes the inner planets (Mercury, Venus, Earth, Mars) from the outer planets (Jupiter, Saturn, Uranus, Neptune)?",
+    "visual": null,
+    "options": [
+      "Inner planets are all the same size; outer planets vary in size.",
+      "Inner planets are made mostly of rock and metal; outer planets are made mostly of gas and ice.",
+      "Inner planets have no atmosphere; outer planets all have thick atmospheres.",
+      "Inner planets rotate faster than outer planets."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-4-09",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What causes day and night on Earth?",
+    "visual": null,
+    "options": [
+      "Earth revolves around the Sun once every 24 hours.",
+      "The Sun moves around Earth once every 24 hours.",
+      "Earth rotates on its axis, so different sides face the Sun at different times.",
+      "The Moon blocks the Sun's light during nighttime."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-4-10",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 3,
+    "stem": "Students want to model how the angle of sunlight affects surface temperature. They plan to shine a flashlight at a piece of dark paper and measure the temperature. Which setup would best test this question?",
+    "visual": null,
+    "options": [
+      "Use different colored paper at the same angle.",
+      "Use the same paper and flashlight but change the angle at which the light hits the surface.",
+      "Use different flashlight brightnesses at the same angle.",
+      "Move the paper to different rooms with different air temperatures."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-4-11",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class observes the Moon every night for a month and records its appearance. They notice the Moon goes from fully dark (new moon) to fully lit (full moon) and back to dark. About how long does this complete cycle take?",
+    "visual": null,
+    "options": [
+      "About 7 days",
+      "About 14 days",
+      "About 29 days",
+      "About 365 days"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-4-12",
+    "domain": "Earth Science",
+    "subtopic": "ES-4",
+    "subtopic_label": "Earth and the Universe",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Stars appear to move across the night sky from east to west over the course of a night. What causes this apparent motion?",
+    "visual": null,
+    "options": [
+      "The stars are orbiting Earth.",
+      "Earth is rotating on its axis.",
+      "The stars are being pulled by the Moon's gravity.",
+      "Earth's revolution around the Sun shifts our view each hour."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-5-04",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which of the following best describes climate, as opposed to weather?",
+    "visual": null,
+    "options": [
+      "The temperature and conditions on a specific day",
+      "The average pattern of weather in an area over a long period of time",
+      "A severe storm such as a hurricane or tornado",
+      "The amount of rainfall in a single month"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-5-05",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher asks students what happens to water puddles on the playground on a warm, sunny day. Which process explains why the puddles disappear?",
+    "visual": null,
+    "options": [
+      "The water soaks into the center of Earth.",
+      "The water is absorbed by nearby plants through their leaves.",
+      "The water evaporates into the air as water vapor.",
+      "The wind pushes the water to a different location."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-5-06",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which factor has the greatest effect on the type of climate found in a region?",
+    "visual": null,
+    "options": [
+      "The number of rivers in the region",
+      "The latitude and distance from the equator",
+      "The types of animals that live there",
+      "The number of cities and roads in the area"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-5-07",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student notices that coastal cities tend to have milder temperatures than inland cities at the same latitude. Which property of water best explains this?",
+    "visual": null,
+    "options": [
+      "Water reflects all of the Sun's energy back into space.",
+      "Water heats up and cools down more slowly than land, moderating nearby air temperatures.",
+      "Water absorbs pollution from the air, which changes the temperature.",
+      "Ocean waves create wind, which blows heat away from coastal cities."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-5-08",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": "INQ-3",
+    "difficulty": 2,
+    "stem": "Which human activity has the greatest impact on increasing the amount of carbon dioxide in Earth's atmosphere?",
+    "visual": null,
+    "options": [
+      "Building dams on rivers",
+      "Burning fossil fuels such as coal, oil, and natural gas",
+      "Using nuclear power to generate electricity",
+      "Planting large areas of farmland"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-5-09",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class measures the air temperature at three locations on the school grounds at the same time on a sunny afternoon: a paved parking lot, a grassy field, and a shaded area under trees. They get the following results:\n\n\n\nWhich conclusion is best supported by the data?",
+    "visual": {
+      "type": "bar_chart",
+      "title": null,
+      "x_axis": {
+        "label": null,
+        "values": []
+      },
+      "series": [
+        {
+          "label": null,
+          "values": [],
+          "axis": "left"
+        }
+      ]
+    },
+    "options": [
+      "Grass produces cold air that lowers the temperature around it.",
+      "Different surface types and shade affect local air temperature.",
+      "The thermometers must not have been calibrated correctly.",
+      "Temperature differences are caused only by distance from the equator."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "ES-5-10",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 3,
+    "stem": "Students want to investigate whether the color of a surface affects how much heat it absorbs from sunlight. Which experiment would best test this question?",
+    "visual": null,
+    "options": [
+      "Place thermometers on surfaces of different colors in the same sunny location and compare their temperatures after 30 minutes.",
+      "Place thermometers on the same color surface in sunny and shady locations and compare temperatures.",
+      "Measure the air temperature at different times of day and look for patterns.",
+      "Place different colored surfaces at different distances from a heat lamp and measure temperatures."
+    ],
+    "correct": 0
+  },
+  {
+    "id": "ES-5-11",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which type of severe weather is characterized by a rotating funnel of air that extends from a thunderstorm to the ground?",
+    "visual": null,
+    "options": [
+      "Hurricane",
+      "Blizzard",
+      "Tornado",
+      "Thunderstorm"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "ES-5-12",
+    "domain": "Earth Science",
+    "subtopic": "ES-5",
+    "subtopic_label": "Earth Patterns, Cycles, and Change",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "During a class discussion about global climate change, a student says, \"It was really cold last winter, so the climate can't be getting warmer.\" Which response best addresses this reasoning?",
+    "visual": null,
+    "options": [
+      "Agree with the student, because local cold weather disproves global warming.",
+      "Explain that climate describes long-term trends across the whole planet, while weather describes short-term local conditions.",
+      "Tell the student that cold winters no longer happen because of climate change.",
+      "Explain that thermometers are not accurate enough to measure climate change."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-1-01",
+    "domain": "Life Science",
+    "subtopic": "LS-1",
+    "subtopic_label": "Structure and Function of Living Systems",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher asks students to name the basic unit of all living things. Which answer is correct?",
+    "visual": null,
+    "options": [
+      "Atom",
+      "Molecule",
+      "Cell",
+      "Organ"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-1-02",
+    "domain": "Life Science",
+    "subtopic": "LS-1",
+    "subtopic_label": "Structure and Function of Living Systems",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which organelle is found in plant cells but not in animal cells?",
+    "visual": null,
+    "options": [
+      "Nucleus",
+      "Cell membrane",
+      "Chloroplast",
+      "Mitochondria"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-1-03",
+    "domain": "Life Science",
+    "subtopic": "LS-1",
+    "subtopic_label": "Structure and Function of Living Systems",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student says, \"Plants get their food from the soil through their roots.\" What is the best way to correct this misconception?",
+    "visual": null,
+    "options": [
+      "Explain that plants get food from water, not soil.",
+      "Explain that plants make their own food through photosynthesis, using sunlight, water, and carbon dioxide.",
+      "Explain that plants get food from the air through their leaves.",
+      "Agree with the student, because roots are the main source of nutrition for plants."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-1-04",
+    "domain": "Life Science",
+    "subtopic": "LS-1",
+    "subtopic_label": "Structure and Function of Living Systems",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which list correctly orders the levels of organization in a multicellular organism from simplest to most complex?",
+    "visual": null,
+    "options": [
+      "Organ, tissue, cell, organ system, organism",
+      "Cell, tissue, organ, organ system, organism",
+      "Tissue, cell, organ, organism, organ system",
+      "Cell, organ, tissue, organ system, organism"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-1-05",
+    "domain": "Life Science",
+    "subtopic": "LS-1",
+    "subtopic_label": "Structure and Function of Living Systems",
+    "inquiry_tag": "INQ-4",
+    "difficulty": 2,
+    "stem": "A class is comparing plant and animal cells under a microscope. Which observation would help students identify a cell as a plant cell rather than an animal cell?",
+    "visual": null,
+    "options": [
+      "The cell has a nucleus.",
+      "The cell has a rigid, rectangular shape and a visible cell wall.",
+      "The cell is very small.",
+      "The cell appears to have a dark center."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-1-06",
+    "domain": "Life Science",
+    "subtopic": "LS-1",
+    "subtopic_label": "Structure and Function of Living Systems",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A teacher gives students the following diagram:\n\n\n\nWhat is Process X?",
+    "visual": {
+      "type": "flow_diagram",
+      "nodes": [
+        "Sunlight + Water + CO₂",
+        "Process X",
+        "Sugar + Oxygen"
+      ],
+      "flow": "left_to_right"
+    },
+    "options": [
+      "Respiration",
+      "Decomposition",
+      "Photosynthesis",
+      "Fermentation"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-1-07",
+    "domain": "Life Science",
+    "subtopic": "LS-1",
+    "subtopic_label": "Structure and Function of Living Systems",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 3,
+    "stem": "Students want to test whether plants need sunlight to grow. They set up two identical plants — one in a sunny window and one in a dark closet — and measure growth over two weeks. A classmate says the experiment is unfair because the closet is also cooler than the window. What should the students do to address this concern?",
+    "visual": null,
+    "options": [
+      "Use a different type of plant for the closet.",
+      "Move both plants to the closet and use a grow lamp for one of them.",
+      "Measure the temperature but ignore it in their conclusion.",
+      "Add a third plant in a different room to compare."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-1-08",
+    "domain": "Life Science",
+    "subtopic": "LS-1",
+    "subtopic_label": "Structure and Function of Living Systems",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which body system is primarily responsible for breaking down food into nutrients the body can use?",
+    "visual": null,
+    "options": [
+      "Respiratory system",
+      "Circulatory system",
+      "Digestive system",
+      "Nervous system"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-2-01",
+    "domain": "Life Science",
+    "subtopic": "LS-2",
+    "subtopic_label": "Reproduction and Heredity",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which term describes a trait that is passed from parents to offspring through genes?",
+    "visual": null,
+    "options": [
+      "Acquired trait",
+      "Learned behavior",
+      "Inherited trait",
+      "Environmental adaptation"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-2-02",
+    "domain": "Life Science",
+    "subtopic": "LS-2",
+    "subtopic_label": "Reproduction and Heredity",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher shows students a Punnett square for a cross between two pea plants. One parent has two dominant alleles (BB) and the other has two recessive alleles (bb). What will all the offspring's genotype be?",
+    "visual": null,
+    "options": [
+      "BB",
+      "Bb",
+      "bb",
+      "A mix of BB and bb"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-2-03",
+    "domain": "Life Science",
+    "subtopic": "LS-2",
+    "subtopic_label": "Reproduction and Heredity",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which of the following is an example of an acquired trait rather than an inherited trait?",
+    "visual": null,
+    "options": [
+      "A dog's fur color",
+      "A person's natural eye color",
+      "A tree's height when grown in poor soil compared to rich soil",
+      "A cat's number of legs"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-2-04",
+    "domain": "Life Science",
+    "subtopic": "LS-2",
+    "subtopic_label": "Reproduction and Heredity",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student says, \"If both parents have brown eyes, their child must also have brown eyes.\" Why is this statement not always true?",
+    "visual": null,
+    "options": [
+      "Eye color is determined only by the mother's genes.",
+      "Both parents could carry a recessive allele for a different eye color and pass those alleles to the child.",
+      "Eye color changes randomly during development.",
+      "Children always have different eye colors than their parents."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-2-05",
+    "domain": "Life Science",
+    "subtopic": "LS-2",
+    "subtopic_label": "Reproduction and Heredity",
+    "inquiry_tag": "INQ-3",
+    "difficulty": 2,
+    "stem": "Selective breeding has been used for thousands of years to develop crops with desirable traits. Which statement best describes how selective breeding works?",
+    "visual": null,
+    "options": [
+      "Scientists change the DNA of organisms directly in a laboratory.",
+      "Organisms with desired traits are chosen to reproduce, increasing the chance those traits appear in future generations.",
+      "Organisms naturally choose mates with the best traits without any human involvement.",
+      "Desired traits are taught to organisms through repeated training."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-2-06",
+    "domain": "Life Science",
+    "subtopic": "LS-2",
+    "subtopic_label": "Reproduction and Heredity",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class breeds fruit flies over several generations. They record the following wing types in the third generation:\n\n\n\nThis ratio is closest to which expected genetic outcome?",
+    "visual": {
+      "type": "bar_chart",
+      "title": null,
+      "x_axis": {
+        "label": null,
+        "values": [
+          "Normal wings",
+          ", Vestigial (short) wings"
+        ]
+      },
+      "series": [
+        {
+          "label": null,
+          "values": [
+            73.0,
+            25.0
+          ],
+          "axis": "left"
+        }
+      ]
+    },
+    "options": [
+      "All offspring showing the dominant trait",
+      "A 3:1 ratio of dominant to recessive trait",
+      "A 1:1 ratio of dominant to recessive trait",
+      "All offspring showing the recessive trait"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-2-07",
+    "domain": "Life Science",
+    "subtopic": "LS-2",
+    "subtopic_label": "Reproduction and Heredity",
+    "inquiry_tag": null,
+    "difficulty": 3,
+    "stem": "During a lesson, a teacher explains that every cell in a student's body contains the same DNA. A student asks, \"If all my cells have the same DNA, why do my skin cells look different from my muscle cells?\" Which response is most accurate?",
+    "visual": null,
+    "options": [
+      "Skin cells and muscle cells actually have different DNA.",
+      "Different types of cells activate different genes from the same DNA.",
+      "Cells change their DNA as the body grows.",
+      "Only brain cells contain the full set of DNA; other cells have partial copies."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-2-08",
+    "domain": "Life Science",
+    "subtopic": "LS-2",
+    "subtopic_label": "Reproduction and Heredity",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What is the role of DNA in living organisms?",
+    "visual": null,
+    "options": [
+      "DNA provides energy for cellular processes.",
+      "DNA carries the instructions for building and maintaining an organism.",
+      "DNA is responsible for transporting oxygen through the body.",
+      "DNA breaks down food into nutrients."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-3-01",
+    "domain": "Life Science",
+    "subtopic": "LS-3",
+    "subtopic_label": "Change Over Time",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which of the following best describes natural selection?",
+    "visual": null,
+    "options": [
+      "Organisms choose to develop traits that help them survive.",
+      "Organisms with traits better suited to their environment are more likely to survive and reproduce.",
+      "All organisms in a population change at the same time to adapt.",
+      "The largest and strongest organisms always survive."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-3-02",
+    "domain": "Life Science",
+    "subtopic": "LS-3",
+    "subtopic_label": "Change Over Time",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher explains that organisms go through different stages during their lifetime. Which term describes the series of changes an organism goes through from birth to adulthood?",
+    "visual": null,
+    "options": [
+      "Food chain",
+      "Life cycle",
+      "Water cycle",
+      "Adaptation"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-3-03",
+    "domain": "Life Science",
+    "subtopic": "LS-3",
+    "subtopic_label": "Change Over Time",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student says, \"Giraffes have long necks because they stretched them to reach tall trees, and then passed that trait to their babies.\" What is wrong with this explanation?",
+    "visual": null,
+    "options": [
+      "Nothing — this is how natural selection works.",
+      "Traits acquired during an organism's lifetime are not passed to offspring through DNA. The long-neck trait was already present and favored by natural selection.",
+      "Giraffes do not actually eat from tall trees.",
+      "Only female giraffes have long necks, so the trait cannot be inherited."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-3-04",
+    "domain": "Life Science",
+    "subtopic": "LS-3",
+    "subtopic_label": "Change Over Time",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which of the following is the best example of an adaptation?",
+    "visual": null,
+    "options": [
+      "A dog learning to sit on command",
+      "A person getting a suntan during summer",
+      "A cactus having thick, waxy skin that reduces water loss in a desert environment",
+      "A tree losing its leaves during a drought"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-3-05",
+    "domain": "Life Science",
+    "subtopic": "LS-3",
+    "subtopic_label": "Change Over Time",
+    "inquiry_tag": "INQ-3",
+    "difficulty": 2,
+    "stem": "Antibiotic resistance in bacteria is a growing concern in medicine. Which statement best explains how bacteria populations become resistant to antibiotics?",
+    "visual": null,
+    "options": [
+      "Individual bacteria learn to fight off the antibiotic.",
+      "Bacteria that happen to have resistance survive treatment and reproduce, passing the trait to offspring.",
+      "Antibiotics cause bacteria to develop new genes for resistance.",
+      "Resistant bacteria are created in laboratories and accidentally released."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-3-06",
+    "domain": "Life Science",
+    "subtopic": "LS-3",
+    "subtopic_label": "Change Over Time",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class studies a population of beetles on an island. The island's rocks are mostly dark gray. Over ten generations, the class records the following:\n\n\n\nWhich explanation best accounts for this trend?",
+    "visual": {
+      "type": "line_chart",
+      "title": null,
+      "x_axis": {
+        "label": "Generation",
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "series": [
+        {
+          "label": "Percentage of dark-colored beetles",
+          "values": [
+            40.0,
+            45.0,
+            50.0,
+            55.0,
+            60.0,
+            65.0,
+            70.0,
+            75.0,
+            80.0,
+            85.0
+          ],
+          "axis": "left"
+        }
+      ]
+    },
+    "options": [
+      "The beetles chose to become darker to blend in with the rocks.",
+      "Dark-colored beetles were better camouflaged from predators and survived to reproduce at higher rates.",
+      "The rocks caused the beetles' shells to change color over time.",
+      "A new species of dark beetle migrated to the island and replaced the lighter ones."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-3-07",
+    "domain": "Life Science",
+    "subtopic": "LS-3",
+    "subtopic_label": "Change Over Time",
+    "inquiry_tag": null,
+    "difficulty": 3,
+    "stem": "A teacher shows students fossils of an ancient whale ancestor that had small hind legs. Students are surprised because modern whales do not have hind legs. Which concept does this fossil evidence best illustrate?",
+    "visual": null,
+    "options": [
+      "Organisms always become larger over time.",
+      "Structures can be reduced or lost over evolutionary time when they are no longer useful for survival.",
+      "Whales are not related to any land animals.",
+      "Fossils do not provide reliable information about how organisms change."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-3-08",
+    "domain": "Life Science",
+    "subtopic": "LS-3",
+    "subtopic_label": "Change Over Time",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which process produces the genetic variation that natural selection acts upon?",
+    "visual": null,
+    "options": [
+      "Photosynthesis",
+      "Mutation and sexual reproduction",
+      "Decomposition",
+      "Erosion"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-4-01",
+    "domain": "Life Science",
+    "subtopic": "LS-4",
+    "subtopic_label": "Regulation, Behavior, Diversity, and Classification",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher asks students to classify a whale. One student says it is a fish because it lives in the ocean. Why is this classification incorrect?",
+    "visual": null,
+    "options": [
+      "Whales are reptiles because they have smooth skin.",
+      "Whales are mammals because they breathe air, are warm-blooded, and nurse their young.",
+      "Whales are amphibians because they can live in water and on land.",
+      "Whales are birds because they migrate long distances."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-4-02",
+    "domain": "Life Science",
+    "subtopic": "LS-4",
+    "subtopic_label": "Regulation, Behavior, Diversity, and Classification",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which of the following is an example of an organism responding to an external stimulus?",
+    "visual": null,
+    "options": [
+      "A plant growing taller over several months",
+      "A sunflower turning to face the Sun throughout the day",
+      "A dog's fur growing thicker as it ages",
+      "A tree producing rings as it grows each year"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-4-03",
+    "domain": "Life Science",
+    "subtopic": "LS-4",
+    "subtopic_label": "Regulation, Behavior, Diversity, and Classification",
+    "inquiry_tag": "INQ-4",
+    "difficulty": 2,
+    "stem": "Scientists classify living things into groups based on shared characteristics. Which of the following is the broadest level of classification, containing the largest number of different organisms?",
+    "visual": null,
+    "options": [
+      "Species",
+      "Genus",
+      "Family",
+      "Domain"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "LS-4-04",
+    "domain": "Life Science",
+    "subtopic": "LS-4",
+    "subtopic_label": "Regulation, Behavior, Diversity, and Classification",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 3,
+    "stem": "Students notice that pill bugs (roly-polies) are always found under rocks and logs, never in open sunny areas. They design an experiment using a shoebox with one damp, dark half and one dry, bright half. They place 20 pill bugs in the center and record their positions after 10 minutes. What question are the students most directly testing?",
+    "visual": null,
+    "options": [
+      "Do pill bugs prefer certain types of food?",
+      "Do pill bugs prefer dark, moist environments over bright, dry ones?",
+      "How fast can pill bugs move across a surface?",
+      "Do pill bugs communicate with each other?"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-5-01",
+    "domain": "Life Science",
+    "subtopic": "LS-5",
+    "subtopic_label": "Interdependence of Organisms",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "In a food chain, which type of organism gets its energy directly from the Sun?",
+    "visual": null,
+    "options": [
+      "Herbivore",
+      "Carnivore",
+      "Producer",
+      "Decomposer"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-5-02",
+    "domain": "Life Science",
+    "subtopic": "LS-5",
+    "subtopic_label": "Interdependence of Organisms",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which term describes the role an organism plays in its ecosystem, including what it eats, where it lives, and how it interacts with other organisms?",
+    "visual": null,
+    "options": [
+      "Habitat",
+      "Niche",
+      "Community",
+      "Biome"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-5-03",
+    "domain": "Life Science",
+    "subtopic": "LS-5",
+    "subtopic_label": "Interdependence of Organisms",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A teacher shows a food web diagram and asks, \"What would most likely happen if the population of mice in this ecosystem suddenly decreased?\" The food web shows: grass → mice → snakes → hawks; grass → rabbits → hawks. Which prediction is best supported?",
+    "visual": null,
+    "options": [
+      "The hawk population would immediately go extinct.",
+      "The snake population would likely decrease because its food source has been reduced.",
+      "The grass population would decrease because nothing is eating it.",
+      "The rabbit population would decrease because snakes would eat them instead."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-5-04",
+    "domain": "Life Science",
+    "subtopic": "LS-5",
+    "subtopic_label": "Interdependence of Organisms",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which type of relationship is best described by this example: a bee collects nectar from a flower for food, and in the process, transfers pollen that helps the plant reproduce?",
+    "visual": null,
+    "options": [
+      "Parasitism",
+      "Commensalism",
+      "Mutualism",
+      "Competition"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-5-05",
+    "domain": "Life Science",
+    "subtopic": "LS-5",
+    "subtopic_label": "Interdependence of Organisms",
+    "inquiry_tag": "INQ-4",
+    "difficulty": 2,
+    "stem": "In any ecosystem, which statement about energy flow is most accurate?",
+    "visual": null,
+    "options": [
+      "Energy is recycled through the ecosystem just like nutrients.",
+      "Energy flows in one direction through an ecosystem — from producers to consumers — and is lost as heat at each level.",
+      "Consumers at the top of a food chain have the most energy available to them.",
+      "Decomposers add new energy to the ecosystem."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-5-06",
+    "domain": "Life Science",
+    "subtopic": "LS-5",
+    "subtopic_label": "Interdependence of Organisms",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class builds two sealed terrariums. Terrarium A contains soil, plants, and small insects. Terrarium B contains only soil and water. After four weeks, Terrarium A is still thriving, but the water in Terrarium B has become stagnant. Which concept does this best demonstrate?",
+    "visual": null,
+    "options": [
+      "Plants are the only organisms that matter in an ecosystem.",
+      "A functioning ecosystem requires interactions among living and nonliving components.",
+      "Water is not important for ecosystem health.",
+      "Insects cause all of the growth in an ecosystem."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-5-07",
+    "domain": "Life Science",
+    "subtopic": "LS-5",
+    "subtopic_label": "Interdependence of Organisms",
+    "inquiry_tag": "INQ-3",
+    "difficulty": 3,
+    "stem": "A city builds a new shopping center on a wetland area. Which effect on the local ecosystem is most likely?",
+    "visual": null,
+    "options": [
+      "The total number of species in the area will increase because more people will bring pets.",
+      "Animals that depended on the wetland for food and shelter will lose their habitat and may decline in number.",
+      "The wetland will naturally move to a new location nearby.",
+      "There will be no effect because animals will adapt immediately."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-5-08",
+    "domain": "Life Science",
+    "subtopic": "LS-5",
+    "subtopic_label": "Interdependence of Organisms",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What is the main role of decomposers in an ecosystem?",
+    "visual": null,
+    "options": [
+      "To produce oxygen for other organisms",
+      "To hunt and eat other animals",
+      "To break down dead organisms and return nutrients to the soil",
+      "To convert sunlight into food energy"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-6-01",
+    "domain": "Life Science",
+    "subtopic": "LS-6",
+    "subtopic_label": "Personal Health",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher is discussing nutrition with the class. Which nutrient group is the body's primary source of quick energy?",
+    "visual": null,
+    "options": [
+      "Proteins",
+      "Vitamins",
+      "Carbohydrates",
+      "Minerals"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-6-02",
+    "domain": "Life Science",
+    "subtopic": "LS-6",
+    "subtopic_label": "Personal Health",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which of the following is the best way to prevent the spread of communicable diseases in a classroom?",
+    "visual": null,
+    "options": [
+      "Opening windows to let in fresh air",
+      "Keeping the classroom lights on at all times",
+      "Regular handwashing with soap and water",
+      "Making sure students eat lunch at the same time"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "LS-6-03",
+    "domain": "Life Science",
+    "subtopic": "LS-6",
+    "subtopic_label": "Personal Health",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student asks why antibiotics can treat a bacterial infection but not the flu. Which explanation is most accurate?",
+    "visual": null,
+    "options": [
+      "The flu is caused by a virus, and antibiotics only work against bacteria.",
+      "Antibiotics are not strong enough to treat the flu.",
+      "The flu is too rare for scientists to develop a treatment.",
+      "Antibiotics work against all illnesses, but doctors limit their use to save them for serious cases."
+    ],
+    "correct": 0
+  },
+  {
+    "id": "LS-6-04",
+    "domain": "Life Science",
+    "subtopic": "LS-6",
+    "subtopic_label": "Personal Health",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A teacher wants students to understand the difference between infectious and noninfectious diseases. Which pair correctly classifies one of each?",
+    "visual": null,
+    "options": [
+      "Infectious: diabetes; Noninfectious: strep throat",
+      "Infectious: influenza; Noninfectious: asthma",
+      "Infectious: heart disease; Noninfectious: the common cold",
+      "Infectious: allergies; Noninfectious: chicken pox"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-6-05",
+    "domain": "Life Science",
+    "subtopic": "LS-6",
+    "subtopic_label": "Personal Health",
+    "inquiry_tag": "INQ-3",
+    "difficulty": 2,
+    "stem": "Vaccines have helped reduce the spread of many diseases. Which statement best describes how vaccines work?",
+    "visual": null,
+    "options": [
+      "Vaccines kill all bacteria and viruses in the body.",
+      "Vaccines introduce a weakened or inactive form of a pathogen so the body can build immunity before encountering the actual disease.",
+      "Vaccines provide nutrients that make the body stronger overall.",
+      "Vaccines cure diseases after a person is already infected."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-6-06",
+    "domain": "Life Science",
+    "subtopic": "LS-6",
+    "subtopic_label": "Personal Health",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A school nurse records the number of students absent due to illness each month. The data shows:\n\n\n\nA teacher uses this data in a science lesson. Which conclusion is best supported?",
+    "visual": {
+      "type": "bar_chart",
+      "title": null,
+      "x_axis": {
+        "label": null,
+        "values": [
+          "September",
+          ", October",
+          ", November",
+          ", December",
+          ", January",
+          ", February",
+          ", March"
+        ]
+      },
+      "series": [
+        {
+          "label": null,
+          "values": [
+            12.0,
+            18.0,
+            25.0,
+            40.0,
+            52.0,
+            35.0,
+            15.0
+          ],
+          "axis": "left"
+        }
+      ]
+    },
+    "options": [
+      "Students get sick more often during months with fewer hours of daylight.",
+      "Illness-related absences peak in winter, which may relate to increased time spent indoors and ease of disease transmission.",
+      "The data proves that cold temperatures directly cause illness.",
+      "Students are absent more in December because of holiday stress."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-6-07",
+    "domain": "Life Science",
+    "subtopic": "LS-6",
+    "subtopic_label": "Personal Health",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 3,
+    "stem": "A class is designing an experiment to test whether washing hands with soap reduces the amount of bacteria on hands compared to washing with water alone. Which setup would best test this question?",
+    "visual": null,
+    "options": [
+      "Have one group wash with soap and another group not wash at all.",
+      "Have one group wash with soap and water, and another group wash with water only, then test both groups' hands for bacteria.",
+      "Have everyone wash with soap and compare bacteria levels before and after.",
+      "Have students wash their hands different numbers of times and compare results."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "LS-6-08",
+    "domain": "Life Science",
+    "subtopic": "LS-6",
+    "subtopic_label": "Personal Health",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which statement about substance abuse is most accurate?",
+    "visual": null,
+    "options": [
+      "Prescription medications cannot be abused because they are given by a doctor.",
+      "Substance abuse only affects adults, not children or teenagers.",
+      "Using a substance in ways other than prescribed, or using illegal substances, can harm the body and brain.",
+      "Caffeine is the only substance that can be habit-forming."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "PS-1-01",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher holds up a sealed plastic bottle of water and asks, \"What are the three common states of matter?\" Which answer is correct?",
+    "visual": null,
+    "options": [
+      "Hot, cold, and warm",
+      "Solid, liquid, and gas",
+      "Metal, plastic, and wood",
+      "Heavy, medium, and light"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-1-02",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which of the following is a chemical change rather than a physical change?",
+    "visual": null,
+    "options": [
+      "Cutting a piece of paper in half",
+      "Melting an ice cube",
+      "Dissolving sugar in water",
+      "Burning a piece of wood"
+    ],
+    "correct": 3
+  },
+  {
+    "id": "PS-1-03",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What is the smallest unit of an element that still has the properties of that element?",
+    "visual": null,
+    "options": [
+      "A molecule",
+      "A cell",
+      "An atom",
+      "A compound"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "PS-1-04",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher places a spoonful of salt in a glass of warm water and stirs. After a few minutes the salt is no longer visible. What has happened?",
+    "visual": null,
+    "options": [
+      "The salt evaporated into the air.",
+      "The salt melted and became part of the water.",
+      "The salt dissolved in the water, forming a solution.",
+      "The salt underwent a chemical reaction and was destroyed."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "PS-1-05",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student mixes baking soda and vinegar in a cup. The mixture bubbles and fizzes. Which statement best explains what is happening?",
+    "visual": null,
+    "options": [
+      "The vinegar is boiling because of the heat from the baking soda.",
+      "A chemical reaction is occurring, producing carbon dioxide gas.",
+      "The baking soda is dissolving, which always produces bubbles.",
+      "The mixture is evaporating quickly due to exposure to air."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-1-06",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which property of matter stays the same whether an object is on Earth or on the Moon?",
+    "visual": null,
+    "options": [
+      "Weight",
+      "Mass",
+      "Volume changes due to gravity",
+      "Density changes due to atmosphere"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-1-07",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A class is learning about the periodic table. A teacher explains that elements in the same column often have similar properties. Which of the following is the best example of this pattern?",
+    "visual": null,
+    "options": [
+      "Hydrogen and helium are both very light gases.",
+      "Gold and silver are both shiny metals that resist corrosion.",
+      "Oxygen and carbon are both needed for living things.",
+      "Iron and oxygen react together to form rust."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-1-08",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 2,
+    "stem": "Students want to find out which type of liquid — water, vinegar, or oil — dissolves sugar the fastest. They plan to add one teaspoon of sugar to each liquid and time how long it takes to dissolve. Which variable must they keep the same across all three tests?",
+    "visual": null,
+    "options": [
+      "The type of liquid",
+      "The amount of sugar and the temperature of each liquid",
+      "The time it takes for the sugar to dissolve",
+      "The type of sugar and the type of liquid"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-1-09",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A teacher heats a sample of ice and records the temperature every minute. The data is shown below:\n\n\n\nA student asks why the temperature stopped rising between minutes 3 and 7. Which explanation is most accurate?",
+    "visual": {
+      "type": "line_chart",
+      "title": "Temperature Over Time During Heating",
+      "x_axis": {
+        "label": "Time (minutes)",
+        "values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "series": [
+        {
+          "label": "Temperature (°C)",
+          "values": [
+            -10,
+            -7,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            7,
+            10,
+            13,
+            16,
+            18,
+            20
+          ],
+          "axis": "left"
+        }
+      ]
+    },
+    "options": [
+      "The thermometer was broken during that time.",
+      "The heat energy was being used to change the ice from solid to liquid rather than to raise the temperature.",
+      "The ice was already completely melted by minute 3, so the temperature could not rise further.",
+      "Heat was escaping from the container, so the temperature stayed the same."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-1-10",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": "INQ-4",
+    "difficulty": 3,
+    "stem": "A teacher asks students to classify the following as either an element, a compound, or a mixture: pure water (H₂O), trail mix, and gold (Au). Which classification is correct?",
+    "visual": null,
+    "options": [
+      "Water: element; Trail mix: compound; Gold: mixture",
+      "Water: mixture; Trail mix: element; Gold: compound",
+      "Water: compound; Trail mix: mixture; Gold: element",
+      "Water: compound; Trail mix: element; Gold: mixture"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "PS-1-11",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class measures the mass and volume of five different objects and calculates their density. They then place each object in a tank of water (density = 1.0 g/cm³).\n\n\n\nWhich objects will float?",
+    "visual": {
+      "type": "bar_chart",
+      "title": null,
+      "x_axis": {
+        "label": null,
+        "values": [
+          "Object A",
+          "; Object B",
+          "; Object C",
+          "; Object D",
+          "; Object E"
+        ]
+      },
+      "series": [
+        {
+          "label": null,
+          "values": [
+            0.5,
+            1.2,
+            0.9,
+            2.4,
+            0.7
+          ],
+          "axis": "left"
+        }
+      ]
+    },
+    "options": [
+      "Only Object A",
+      "Objects A, C, and E",
+      "Objects B and D",
+      "All five objects"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-1-12",
+    "domain": "Physical Science",
+    "subtopic": "PS-1",
+    "subtopic_label": "Properties and Structure of Matter",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student says, \"When water evaporates, it disappears and is gone.\" How should the teacher respond?",
+    "visual": null,
+    "options": [
+      "Agree, because the water is no longer visible.",
+      "Explain that the water has changed from a liquid to a gas called water vapor, which is still present in the air but invisible.",
+      "Explain that the water was absorbed by the container it was in.",
+      "Explain that the water broke apart into hydrogen and oxygen atoms."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-01",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A book is sitting on a table and not moving. Which statement best describes the forces acting on the book?",
+    "visual": null,
+    "options": [
+      "No forces are acting on the book.",
+      "Gravity is pulling the book down, and the table is pushing the book up with an equal force.",
+      "The book is pushing the table down, but the table is not pushing back.",
+      "Gravity has stopped acting on the book because it is not moving."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-02",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What does it mean when the forces on an object are unbalanced?",
+    "visual": null,
+    "options": [
+      "The object will remain still.",
+      "The object will change its motion — speed up, slow down, or change direction.",
+      "The object will become heavier.",
+      "The forces cancel each other out."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-03",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which of the following is an example of friction?",
+    "visual": null,
+    "options": [
+      "A magnet pulling a paperclip across a table",
+      "A ball rolling to a stop on a carpet",
+      "A balloon floating upward when released",
+      "A leaf falling from a tree"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-04",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student pushes a toy car across a smooth floor and then across a rough carpet. The car travels a shorter distance on the carpet. Which explanation is most accurate?",
+    "visual": null,
+    "options": [
+      "The carpet absorbs the car's energy, making it lighter.",
+      "The rough carpet creates more friction, which slows the car down faster.",
+      "The carpet pushes the car backward.",
+      "The car's wheels work differently on carpet than on hard floors."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-05",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A teacher drops a basketball and a tennis ball from the same height at the same time. Both balls hit the ground at nearly the same moment. A student is surprised and says, \"The heavier ball should fall faster.\" Which concept explains why both balls fall at the same rate?",
+    "visual": null,
+    "options": [
+      "The heavier ball has more air resistance, which slows it down to match the lighter ball.",
+      "All objects near Earth's surface accelerate due to gravity at the same rate, regardless of mass.",
+      "The two balls have the same mass, just different sizes.",
+      "The teacher must have dropped the lighter ball slightly before the heavier one."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-06",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "According to Newton's third law, when a swimmer pushes backward on the water with her hands, what happens?",
+    "visual": null,
+    "options": [
+      "The water disappears behind her.",
+      "The water pushes her forward with an equal and opposite force.",
+      "The water pushes her backward as well.",
+      "Nothing happens to the swimmer because water is a liquid."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-07",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": "INQ-3",
+    "difficulty": 2,
+    "stem": "Seat belts are required in cars to protect passengers during a sudden stop. Which science concept best explains why passengers lurch forward when a car stops suddenly?",
+    "visual": null,
+    "options": [
+      "Gravity pulls passengers toward the front of the car.",
+      "Passengers' bodies continue moving forward due to inertia.",
+      "The engine pushes passengers forward when the brakes are applied.",
+      "Air pressure inside the car increases when the car stops."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-08",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 3,
+    "stem": "Students build ramps and roll marbles down them to investigate how ramp height affects how far the marble travels across the floor. Which variables should the students keep the same for every trial?",
+    "visual": null,
+    "options": [
+      "The height of the ramp and the type of marble",
+      "The type of marble, the surface of the floor, and the angle of the ramp",
+      "The distance the marble travels and the height of the ramp",
+      "Only the type of marble needs to stay the same"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-09",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "A class measures how far a toy car travels when launched by rubber bands stretched to different lengths. Their results:\n\n\n\nWhich conclusion is best supported by the data?",
+    "visual": {
+      "type": "bar_chart",
+      "title": null,
+      "x_axis": {
+        "label": null,
+        "values": [
+          "5 cm stretch",
+          "10 cm stretch",
+          "15 cm stretch",
+          "20 cm stretch"
+        ]
+      },
+      "series": [
+        {
+          "label": null,
+          "values": [
+            30.0,
+            65.0,
+            95.0,
+            130.0
+          ],
+          "axis": "left"
+        }
+      ]
+    },
+    "options": [
+      "The car always travels exactly twice the distance of the stretch.",
+      "Stretching the rubber band farther applies more force to the car, causing it to travel a greater distance.",
+      "The rubber band gets weaker as it is stretched farther.",
+      "The type of car affects how far it travels."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-10",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher asks students to describe the difference between speed and velocity. Which student gives the best answer?",
+    "visual": null,
+    "options": [
+      "\"Speed and velocity are the same thing.\"",
+      "\"Speed tells you how fast something is moving; velocity tells you how fast and in what direction.\"",
+      "\"Velocity is always faster than speed.\"",
+      "\"Speed is for cars and velocity is for airplanes.\""
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-11",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": null,
+    "difficulty": 3,
+    "stem": "A student is riding a bicycle on a flat road at a constant speed. She stops pedaling. Which of the following best explains why the bicycle eventually stops?",
+    "visual": null,
+    "options": [
+      "The bicycle runs out of energy because the rider stopped adding force.",
+      "Friction and air resistance gradually slow the bicycle down.",
+      "Gravity pulls the bicycle to a stop.",
+      "The bicycle stops because all objects naturally come to rest."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-2-12",
+    "domain": "Physical Science",
+    "subtopic": "PS-2",
+    "subtopic_label": "Forces and Motion",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which of the following best describes what gravity does?",
+    "visual": null,
+    "options": [
+      "Gravity pushes objects away from Earth.",
+      "Gravity only affects heavy objects.",
+      "Gravity pulls objects toward each other; the strength depends on mass and distance.",
+      "Gravity only exists on Earth's surface."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "PS-3-01",
+    "domain": "Physical Science",
+    "subtopic": "PS-3",
+    "subtopic_label": "Energy",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A teacher asks students to name two main categories of energy. Which answer is correct?",
+    "visual": null,
+    "options": [
+      "Light energy and dark energy",
+      "Kinetic energy and potential energy",
+      "Electrical energy and magnetic energy",
+      "Big energy and small energy"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-3-02",
+    "domain": "Physical Science",
+    "subtopic": "PS-3",
+    "subtopic_label": "Energy",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A ball is held at the top of a hill and then released. At which point does the ball have the most potential energy?",
+    "visual": null,
+    "options": [
+      "At the bottom of the hill after it has stopped",
+      "At the top of the hill before it is released",
+      "Halfway down the hill",
+      "After it rolls onto flat ground"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-3-03",
+    "domain": "Physical Science",
+    "subtopic": "PS-3",
+    "subtopic_label": "Energy",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A student rubs her hands together quickly and notices they feel warm. Which energy transformation is occurring?",
+    "visual": null,
+    "options": [
+      "Chemical energy is being converted to light energy.",
+      "Kinetic energy is being converted to thermal energy through friction.",
+      "Potential energy is being converted to sound energy.",
+      "Electrical energy is being converted to thermal energy."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-3-04",
+    "domain": "Physical Science",
+    "subtopic": "PS-3",
+    "subtopic_label": "Energy",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A teacher shows students a diagram of a simple machine — a lever with a fulcrum near one end. A student places a heavy rock on the short side and pushes down on the long side. Why does using the lever make it easier to lift the rock?",
+    "visual": null,
+    "options": [
+      "The lever creates additional energy to lift the rock.",
+      "The lever eliminates friction between the rock and the ground.",
+      "The lever allows the student to apply a smaller force over a greater distance to move the rock.",
+      "The lever reduces the weight of the rock."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "PS-3-05",
+    "domain": "Physical Science",
+    "subtopic": "PS-3",
+    "subtopic_label": "Energy",
+    "inquiry_tag": "INQ-4",
+    "difficulty": 2,
+    "stem": "Which statement best describes the law of conservation of energy?",
+    "visual": null,
+    "options": [
+      "Energy can be created when it is needed and destroyed when it is not.",
+      "Energy cannot be created or destroyed — it can only change from one form to another.",
+      "Energy is always lost when it is transferred from one object to another.",
+      "Potential energy is always greater than kinetic energy."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-3-06",
+    "domain": "Physical Science",
+    "subtopic": "PS-3",
+    "subtopic_label": "Energy",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "Students set up a roller coaster track for a marble and measure the marble's speed at three points:\n\n\n\nWhich explanation best accounts for the speed differences?",
+    "visual": {
+  "type": "flow_diagram",
+  "subtype": "roller_coaster",
+  "title": "Marble Roller Coaster — Speed at Three Points",
+  "nodes": [
+    { "label": "Point A (top)", "detail": "Speed: 0 m/s", "height": "high" },
+    { "label": "Point B (bottom of dip)", "detail": "Speed: 3.2 m/s", "height": "low" },
+    { "label": "Point C (smaller hill)", "detail": "Speed: 1.8 m/s", "height": "medium" }
+  ],
+  "flow": "left_to_right"
+},
+    "options": [
+      "The marble gains energy as it moves, so it speeds up at every point.",
+      "At Point A, energy is stored as potential energy; as the marble descends, potential energy converts to kinetic energy, and the speeds reflect the height differences.",
+      "Friction makes the marble go faster at lower points.",
+      "The marble is pushed by air at the bottom of the track."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-3-07",
+    "domain": "Physical Science",
+    "subtopic": "PS-3",
+    "subtopic_label": "Energy",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 3,
+    "stem": "A class wants to investigate which simple machine — a ramp, a pulley, or a lever — requires the least force to lift a 500-gram weight to a height of 30 centimeters. What must be the same in each trial for the comparison to be fair?",
+    "visual": null,
+    "options": [
+      "The type of simple machine used",
+      "The weight of the object and the height it is lifted",
+      "The amount of force applied",
+      "The distance over which the force is applied"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-3-08",
+    "domain": "Physical Science",
+    "subtopic": "PS-3",
+    "subtopic_label": "Energy",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Which of the following is an example of electrical energy being converted to light energy?",
+    "visual": null,
+    "options": [
+      "A campfire warming your hands",
+      "A battery-powered flashlight turning on",
+      "A windmill spinning in the breeze",
+      "A rubber band being stretched"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-4-01",
+    "domain": "Physical Science",
+    "subtopic": "PS-4",
+    "subtopic_label": "Interactions of Energy and Matter",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "What do all waves carry from one place to another?",
+    "visual": null,
+    "options": [
+      "Matter",
+      "Energy",
+      "Weight",
+      "Temperature"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-4-02",
+    "domain": "Physical Science",
+    "subtopic": "PS-4",
+    "subtopic_label": "Interactions of Energy and Matter",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "Sound is produced when an object does which of the following?",
+    "visual": null,
+    "options": [
+      "Changes color",
+      "Vibrates",
+      "Reflects light",
+      "Changes temperature"
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-4-03",
+    "domain": "Physical Science",
+    "subtopic": "PS-4",
+    "subtopic_label": "Interactions of Energy and Matter",
+    "inquiry_tag": null,
+    "difficulty": 1,
+    "stem": "A student rubs a balloon on her hair and then holds it near small pieces of paper. The paper sticks to the balloon. Which concept does this demonstrate?",
+    "visual": null,
+    "options": [
+      "Magnetism",
+      "Gravity",
+      "Static electricity",
+      "Chemical bonding"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "PS-4-04",
+    "domain": "Physical Science",
+    "subtopic": "PS-4",
+    "subtopic_label": "Interactions of Energy and Matter",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "A teacher strikes a tuning fork and places it in water. Students see the water splash. The teacher then asks what would happen to the sound if they could remove all the air from the room. Which answer is correct?",
+    "visual": null,
+    "options": [
+      "The sound would get louder because there would be nothing to block it.",
+      "The sound would stay the same because the tuning fork is still vibrating.",
+      "The sound would not be heard because sound needs a medium to travel through.",
+      "The sound would travel faster because air slows it down."
+    ],
+    "correct": 2
+  },
+  {
+    "id": "PS-4-05",
+    "domain": "Physical Science",
+    "subtopic": "PS-4",
+    "subtopic_label": "Interactions of Energy and Matter",
+    "inquiry_tag": null,
+    "difficulty": 2,
+    "stem": "Which of the following correctly describes the relationship between a magnet and an iron nail?",
+    "visual": null,
+    "options": [
+      "The magnet pushes the nail away because they have the same charge.",
+      "The magnet attracts the nail because iron is a magnetic material.",
+      "The magnet attracts the nail because the nail is electrically charged.",
+      "The magnet has no effect on the nail because the nail is not a magnet."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-4-06",
+    "domain": "Physical Science",
+    "subtopic": "PS-4",
+    "subtopic_label": "Interactions of Energy and Matter",
+    "inquiry_tag": "INQ-3",
+    "difficulty": 2,
+    "stem": "Which of the following devices converts electrical energy into sound energy?",
+    "visual": null,
+    "options": [
+      "A solar panel",
+      "A microphone",
+      "A speaker",
+      "A generator"
+    ],
+    "correct": 2
+  },
+  {
+    "id": "PS-4-07",
+    "domain": "Physical Science",
+    "subtopic": "PS-4",
+    "subtopic_label": "Interactions of Energy and Matter",
+    "inquiry_tag": "INQ-2",
+    "difficulty": 3,
+    "stem": "Students pluck a rubber band stretched across a box and observe the sound. They then tighten the rubber band and pluck it again. They notice the pitch is higher when the band is tighter. Which explanation best accounts for this?",
+    "visual": null,
+    "options": [
+      "A tighter rubber band vibrates more slowly, producing a higher pitch.",
+      "A tighter rubber band vibrates more quickly, producing a higher frequency and a higher pitch.",
+      "The tighter band is louder, and louder sounds always have a higher pitch.",
+      "The box amplifies the sound more when the band is tight."
+    ],
+    "correct": 1
+  },
+  {
+    "id": "PS-4-08",
+    "domain": "Physical Science",
+    "subtopic": "PS-4",
+    "subtopic_label": "Interactions of Energy and Matter",
+    "inquiry_tag": "INQ-1",
+    "difficulty": 3,
+    "stem": "A class wants to test whether the thickness of a wire affects how well it conducts electricity. They plan to connect wires of different thicknesses to a battery and a small light bulb and observe the brightness. Which variables must they keep the same?",
+    "visual": null,
+    "options": [
+      "The thickness of the wire and the type of battery",
+      "The length of the wire, the material of the wire, and the type of battery",
+      "The brightness of the bulb and the type of wire",
+      "Only the type of battery needs to stay the same"
+    ],
+    "correct": 1
+  }
+]
