@@ -47,7 +47,49 @@ body {
   max-width: 760px;
   margin: 0 auto;
   padding: 24px 20px;
+  transition: max-width 0.2s ease;
 }
+
+.container.test-active { max-width: 920px; }
+
+/* ========== TEST LAYOUT (sidebar + main) ========== */
+.test-layout {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.test-sidebar {
+  position: sticky;
+  top: 60px;
+  flex-shrink: 0;
+  width: 62px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 8px;
+  box-shadow: var(--shadow);
+}
+
+.sidebar-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.test-sidebar .question-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  margin-bottom: 0;
+  justify-items: center;
+}
+
+.test-main { flex: 1; min-width: 0; }
 
 .screen { display: none; }
 .screen.active { display: block; }
@@ -225,12 +267,12 @@ p:last-child { margin-bottom: 0; }
 }
 
 .q-dot {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 2px solid var(--border);
   background: var(--surface);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: var(--text-secondary);
   display: flex;
@@ -449,14 +491,25 @@ p:last-child { margin-bottom: 0; }
 .modal .btn-group { justify-content: flex-end; }
 
 /* ========== RESPONSIVE ========== */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .container { padding: 16px 14px; }
+  .container.test-active { max-width: 760px; }
   .card { padding: 20px 16px; }
   h1 { font-size: 1.4rem; }
-  .q-dot { width: 28px; height: 28px; font-size: 0.7rem; }
-  .test-header { flex-direction: column; gap: 8px; align-items: flex-start; }
   .score-display { font-size: 2.4rem; }
   .btn-group { flex-direction: column; }
+
+  .test-layout { flex-direction: column; }
+  .test-sidebar {
+    position: static;
+    width: 100%;
+    padding: 8px 10px;
+  }
+  .test-sidebar .question-nav {
+    grid-template-columns: repeat(auto-fill, 28px);
+    justify-content: center;
+  }
+  .test-header { flex-direction: column; gap: 8px; align-items: flex-start; }
   .test-controls { flex-direction: column; gap: 10px; }
   .test-controls .btn { width: 100%; }
 }
@@ -507,20 +560,27 @@ p:last-child { margin-bottom: 0; }
       </div>
     </div>
 
-    <div class="question-nav" id="question-nav"></div>
+    <div class="test-layout">
+      <aside class="test-sidebar" id="test-sidebar">
+        <div class="sidebar-label">Questions</div>
+        <div class="question-nav" id="question-nav"></div>
+      </aside>
 
-    <div class="card" id="question-card">
-      <div class="question-stem" id="question-stem"></div>
-      <div class="visual-container" id="visual-container" style="display:none">
-        <canvas id="visual-canvas" width="500" height="300"></canvas>
+      <div class="test-main">
+        <div class="card" id="question-card">
+          <div class="question-stem" id="question-stem"></div>
+          <div class="visual-container" id="visual-container" style="display:none">
+            <canvas id="visual-canvas" width="500" height="300"></canvas>
+          </div>
+          <ul class="options-list" id="options-list"></ul>
+        </div>
+
+        <div class="test-controls">
+          <button class="btn btn-secondary" id="btn-prev">← Previous</button>
+          <button class="btn btn-primary" id="btn-next">Next →</button>
+          <button class="btn btn-primary" id="btn-submit-test" style="display:none">Submit</button>
+        </div>
       </div>
-      <ul class="options-list" id="options-list"></ul>
-    </div>
-
-    <div class="test-controls">
-      <button class="btn btn-secondary" id="btn-prev">← Previous</button>
-      <button class="btn btn-primary" id="btn-next">Next →</button>
-      <button class="btn btn-primary" id="btn-submit-test" style="display:none">Submit</button>
     </div>
   </div>
 
@@ -763,6 +823,13 @@ function updateTimerDisplay() {
 
 // ==================== CHART RENDERING (for visual items) ====================
 
+function toLabel(val) {
+  if (typeof val === 'string') return val;
+  if (typeof val === 'number') return String(val);
+  if (val && typeof val === 'object') return val.label || val.text || val.name || JSON.stringify(val);
+  return String(val);
+}
+
 function renderVisual(visual) {
   const container = document.getElementById('visual-container');
   const canvas = document.getElementById('visual-canvas');
@@ -812,7 +879,7 @@ function drawLineChart(ctx, visual, w, h) {
   ctx.textAlign = 'center';
   if (visual.title) ctx.fillText(visual.title, w / 2, 16);
 
-  const xValues = visual.x_axis.values;
+  const xValues = visual.x_axis.values.map(toLabel);
   const xStep = plotW / (xValues.length - 1 || 1);
 
   // Find value ranges for each axis
@@ -878,7 +945,7 @@ function drawLineChart(ctx, visual, w, h) {
     ctx.font = '10px IBM Plex Sans, sans-serif';
     ctx.textAlign = isRight ? 'right' : 'left';
     const labelX = isRight ? w - 8 : 8;
-    ctx.fillText(series.label, labelX, pad.top - 6);
+    ctx.fillText(toLabel(series.label), labelX, pad.top - 6);
 
     // Draw line
     ctx.strokeStyle = color;
@@ -916,7 +983,7 @@ function drawBarChart(ctx, visual, w, h) {
   ctx.textAlign = 'center';
   if (visual.title) ctx.fillText(visual.title, w / 2, 16);
 
-  const labels = visual.x_axis ? visual.x_axis.values : (visual.labels || []);
+  const labels = (visual.x_axis ? visual.x_axis.values : (visual.labels || [])).map(toLabel);
   const values = visual.series ? visual.series[0].values : (visual.values || []);
   const maxVal = Math.max(...values) * 1.15;
   const barCount = labels.length;
@@ -1008,14 +1075,16 @@ function drawPieChart(ctx, visual, w, h) {
     ctx.fillStyle = '#1a1a2e';
     ctx.font = '10px IBM Plex Sans, sans-serif';
     ctx.textAlign = midAngle > Math.PI / 2 && midAngle < Math.PI * 1.5 ? 'right' : 'left';
-    ctx.fillText(`${slice.label} (${slice.value}%)`, lx, ly);
+    ctx.fillText(`${toLabel(slice.label)} (${slice.value}%)`, lx, ly);
 
     startAngle += sweepAngle;
   });
 }
 
 function drawFlowDiagram(ctx, visual, w, h) {
-  const nodes = visual.nodes || [];
+  const rawNodes = visual.nodes || [];
+  // Handle nodes as strings OR objects with label/text property
+  const nodes = rawNodes.map(n => typeof n === 'string' ? n : (n.label || n.text || n.name || String(n)));
   const nodeW = 140;
   const nodeH = 40;
   const totalW = nodes.length * nodeW + (nodes.length - 1) * 30;
@@ -1032,12 +1101,27 @@ function drawFlowDiagram(ctx, visual, w, h) {
     ctx.fill();
     ctx.stroke();
 
-    // Label
+    // Label — wrap if too long
     ctx.fillStyle = '#1a1a2e';
     ctx.font = '11px IBM Plex Sans, sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText(label, x + nodeW / 2, y + nodeH / 2);
+    const maxW = nodeW - 12;
+    if (ctx.measureText(label).width > maxW) {
+      ctx.font = '9px IBM Plex Sans, sans-serif';
+      const words = label.split(' ');
+      let lines = [''];
+      words.forEach(word => {
+        const test = lines[lines.length - 1] + (lines[lines.length - 1] ? ' ' : '') + word;
+        if (ctx.measureText(test).width > maxW && lines[lines.length - 1]) lines.push(word);
+        else lines[lines.length - 1] = test;
+      });
+      const lineH = 12;
+      const startY = y + nodeH / 2 - ((lines.length - 1) * lineH) / 2;
+      lines.forEach((line, li) => ctx.fillText(line, x + nodeW / 2, startY + li * lineH));
+    } else {
+      ctx.fillText(label, x + nodeW / 2, y + nodeH / 2);
+    }
 
     // Arrow
     if (i < nodes.length - 1) {
@@ -1067,6 +1151,8 @@ function drawFlowDiagram(ctx, visual, w, h) {
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
+  // Widen container for test screen to accommodate sidebar
+  document.getElementById('app').classList.toggle('test-active', id === 'screen-test');
   window.scrollTo(0, 0);
 }
 
