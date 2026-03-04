@@ -331,16 +331,36 @@
     "difficulty": 3,
     "stem": "A teacher shows students the following diagram of Earth's water distribution:\n\n\n\nA student says, \"We should just melt glaciers to solve water shortages.\" Based on the diagram, which response best addresses this idea?",
     "visual": {
-  "type": "pie_chart",
-  "title": "Earth's Water Distribution",
-  "segments": [
-    { "label": "Oceans", "value": 97.2, "display": "97.2%" },
-    { "label": "Ice caps/glaciers", "value": 2.1, "display": "2.1%" },
-    { "label": "Groundwater", "value": 0.6, "display": "0.6%" },
-    { "label": "Freshwater lakes/rivers", "value": 0.01, "display": "0.01%" },
-    { "label": "Other", "value": 0.09, "display": "0.09%" }
-  ]
-},
+      "type": "pie_chart",
+      "title": "Earth's Water Distribution",
+      "slices": [
+        {
+          "label": "Oceans",
+          "value": 97.2,
+          "display": "97.2%"
+        },
+        {
+          "label": "Ice caps/glaciers",
+          "value": 2.1,
+          "display": "2.1%"
+        },
+        {
+          "label": "Groundwater",
+          "value": 0.6,
+          "display": "0.6%"
+        },
+        {
+          "label": "Freshwater lakes/rivers",
+          "value": 0.01,
+          "display": "0.01%"
+        },
+        {
+          "label": "Other",
+          "value": 0.09,
+          "display": "0.09%"
+        }
+      ]
+    },
     "options": [
       "Melting glaciers would provide plenty of water since they hold 97% of Earth's water.",
       "Glaciers hold a small share of total water, and melting them would raise sea levels and disrupt ecosystems.",
@@ -937,15 +957,23 @@
     "stem": "A class measures the air temperature at three locations on the school grounds at the same time on a sunny afternoon: a paved parking lot, a grassy field, and a shaded area under trees. They get the following results:\n\n\n\nWhich conclusion is best supported by the data?",
     "visual": {
       "type": "bar_chart",
-      "title": null,
+      "title": "Air Temperature by Location",
       "x_axis": {
-        "label": null,
-        "values": []
+        "label": "Location",
+        "values": [
+          "Paved Parking Lot",
+          "Grassy Field",
+          "Shaded Area"
+        ]
       },
       "series": [
         {
-          "label": null,
-          "values": [],
+          "label": "Temperature (°F)",
+          "values": [
+            94,
+            86,
+            78
+          ],
           "axis": "left"
         }
       ]
@@ -1253,7 +1281,7 @@
         "label": null,
         "values": [
           "Normal wings",
-          ", Vestigial (short) wings"
+          "Vestigial (short) wings"
         ]
       },
       "series": [
@@ -1785,12 +1813,12 @@
         "label": null,
         "values": [
           "September",
-          ", October",
-          ", November",
-          ", December",
-          ", January",
-          ", February",
-          ", March"
+          "October",
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
         ]
       },
       "series": [
@@ -2082,10 +2110,10 @@
         "label": null,
         "values": [
           "Object A",
-          "; Object B",
-          "; Object C",
-          "; Object D",
-          "; Object E"
+          "Object B",
+          "Object C",
+          "Object D",
+          "Object E"
         ]
       },
       "series": [
@@ -2449,16 +2477,16 @@
     "difficulty": 3,
     "stem": "Students set up a roller coaster track for a marble and measure the marble's speed at three points:\n\n\n\nWhich explanation best accounts for the speed differences?",
     "visual": {
-  "type": "flow_diagram",
-  "subtype": "roller_coaster",
-  "title": "Marble Roller Coaster — Speed at Three Points",
-  "nodes": [
-    { "label": "Point A (top)", "detail": "Speed: 0 m/s", "height": "high" },
-    { "label": "Point B (bottom of dip)", "detail": "Speed: 3.2 m/s", "height": "low" },
-    { "label": "Point C (smaller hill)", "detail": "Speed: 1.8 m/s", "height": "medium" }
-  ],
-  "flow": "left_to_right"
-},
+      "type": "flow_diagram",
+      "subtype": "roller_coaster",
+      "title": "Marble Roller Coaster — Speed at Three Points",
+      "nodes": [
+        "Point A (top)\nSpeed: 0 m/s",
+        "Point B (bottom of dip)\nSpeed: 3.2 m/s",
+        "Point C (smaller hill)\nSpeed: 1.8 m/s"
+      ],
+      "flow": "left_to_right"
+    },
     "options": [
       "The marble gains energy as it moves, so it speeds up at every point.",
       "At Point A, energy is stored as potential energy; as the marble descends, potential energy converts to kinetic energy, and the speeds reflect the height differences.",
