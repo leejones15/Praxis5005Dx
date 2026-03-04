@@ -63,11 +63,11 @@ body {
   position: sticky;
   top: 60px;
   flex-shrink: 0;
-  width: 62px;
+  width: 76px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 10px 8px;
+  padding: 10px 6px;
   box-shadow: var(--shadow);
 }
 
@@ -87,6 +87,12 @@ body {
   gap: 4px;
   margin-bottom: 0;
   justify-items: center;
+}
+
+.test-sidebar .q-dot {
+  width: 28px;
+  height: 28px;
+  font-size: 0.7rem;
 }
 
 .test-main { flex: 1; min-width: 0; }
@@ -528,6 +534,19 @@ p:last-child { margin-bottom: 0; }
 .star-btn:hover { transform: scale(1.15); }
 .star-btn.active { color: #f59e0b; }
 
+.feedback-card {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.feedback-card.visible {
+  display: block !important;
+  opacity: 1;
+}
+.feedback-card.submitted {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 700px) {
   .container { padding: 16px 14px; }
@@ -568,7 +587,7 @@ p:last-child { margin-bottom: 0; }
       <div class="landing-info">
         <p>This diagnostic covers the three content domains of the Praxis 5005 Elementary Education: Science subtest — <strong>Earth Science</strong>, <strong>Life Science</strong>, and <strong>Physical Science</strong> — including questions that test scientific inquiry and process skills.</p>
         <p>You'll answer <strong>35 questions in about 30 minutes</strong>. Afterward, you'll receive a personalized report showing your proficiency level, domain strengths, and specific topics to review.</p>
-        <p>You can retake the diagnostic as many times as you want to track your improvement.</p>
+        <p>You can retake the diagnostic up to 4 times with different questions to track your improvement.</p>
       </div>
     </div>
 
@@ -622,35 +641,6 @@ p:last-child { margin-bottom: 0; }
     </div>
   </div>
 
-  <!-- ==================== FEEDBACK PAGE ==================== -->
-  <div id="screen-feedback" class="screen">
-    <div class="card" style="max-width:560px;margin:40px auto">
-      <h2>Before your results...</h2>
-      <p class="text-secondary">Your responses have been saved. Before we show your report, we'd love a quick bit of feedback to help improve this tool. This is completely optional.</p>
-
-      <div style="margin:20px 0">
-        <label class="text-small" style="font-weight:600;display:block;margin-bottom:8px">How helpful was this diagnostic?</label>
-        <div class="star-rating" id="star-rating">
-          <button class="star-btn" data-value="1" aria-label="1 star">★</button>
-          <button class="star-btn" data-value="2" aria-label="2 stars">★</button>
-          <button class="star-btn" data-value="3" aria-label="3 stars">★</button>
-          <button class="star-btn" data-value="4" aria-label="4 stars">★</button>
-          <button class="star-btn" data-value="5" aria-label="5 stars">★</button>
-        </div>
-      </div>
-
-      <div class="input-group">
-        <label for="feedback-text">Anything else you'd like to share?</label>
-        <textarea id="feedback-text" class="input-field" rows="3" placeholder="Questions that were confusing, topics you felt unprepared for, suggestions..." style="resize:vertical"></textarea>
-      </div>
-
-      <div class="btn-group" style="justify-content:space-between">
-        <button class="btn btn-secondary" id="btn-skip-feedback">Skip — show results</button>
-        <button class="btn btn-primary" id="btn-submit-feedback">Submit &amp; see results</button>
-      </div>
-    </div>
-  </div>
-
   <!-- ==================== RESULTS PAGE ==================== -->
   <div id="screen-results" class="screen">
     <div class="card results-header" id="results-header">
@@ -675,6 +665,30 @@ p:last-child { margin-bottom: 0; }
     <div class="card" id="results-study">
       <h3>Recommended Study Areas</h3>
       <div id="study-list"></div>
+    </div>
+
+    <div class="card feedback-card" id="results-feedback" style="display:none">
+      <h3>Help Us Improve</h3>
+      <p class="text-secondary text-small">Optional — your feedback helps us make this tool better for future students.</p>
+
+      <div style="margin:14px 0">
+        <label class="text-small" style="font-weight:500;display:block;margin-bottom:6px">How helpful was this diagnostic?</label>
+        <div class="star-rating" id="star-rating">
+          <button class="star-btn" data-value="1" aria-label="1 star">★</button>
+          <button class="star-btn" data-value="2" aria-label="2 stars">★</button>
+          <button class="star-btn" data-value="3" aria-label="3 stars">★</button>
+          <button class="star-btn" data-value="4" aria-label="4 stars">★</button>
+          <button class="star-btn" data-value="5" aria-label="5 stars">★</button>
+        </div>
+      </div>
+
+      <div class="input-group" style="margin-bottom:12px">
+        <label for="feedback-text" class="text-small" style="font-weight:500">Anything else you'd like to share?</label>
+        <textarea id="feedback-text" class="input-field" rows="2" placeholder="Questions that were confusing, topics you felt unprepared for, suggestions..." style="resize:vertical"></textarea>
+      </div>
+
+      <button class="btn btn-secondary" id="btn-submit-feedback" style="width:100%">Submit Feedback</button>
+      <p class="text-xs text-secondary feedback-thanks" id="feedback-thanks" style="display:none;text-align:center;margin-top:10px">Thanks for your feedback!</p>
     </div>
 
     <div class="results-actions">
@@ -967,6 +981,13 @@ function toLabel(val) {
   return String(val);
 }
 
+function toNum(val) {
+  if (typeof val === 'number') return val;
+  if (typeof val === 'string') return parseFloat(val) || 0;
+  if (val && typeof val === 'object') return parseFloat(val.value || val.y || val.amount) || 0;
+  return 0;
+}
+
 function renderVisual(visual) {
   const container = document.getElementById('visual-container');
   const canvas = document.getElementById('visual-canvas');
@@ -1022,6 +1043,11 @@ function drawLineChart(ctx, visual, w, h) {
   // Find value ranges for each axis
   let leftMin = Infinity, leftMax = -Infinity;
   let rightMin = Infinity, rightMax = -Infinity;
+
+  // Ensure all series values are numeric
+  visual.series.forEach(s => {
+    s.values = s.values.map(toNum);
+  });
 
   visual.series.forEach(s => {
     const min = Math.min(...s.values);
@@ -1121,8 +1147,9 @@ function drawBarChart(ctx, visual, w, h) {
   if (visual.title) ctx.fillText(visual.title, w / 2, 16);
 
   const labels = (visual.x_axis ? visual.x_axis.values : (visual.labels || [])).map(toLabel);
-  const values = visual.series ? visual.series[0].values : (visual.values || []);
-  const maxVal = Math.max(...values) * 1.15;
+  const rawValues = visual.series ? visual.series[0].values : (visual.values || []);
+  const values = rawValues.map(toNum);
+  const maxVal = Math.max(...values) * 1.15 || 1;
   const barCount = labels.length;
   const barW = Math.min(50, (plotW / barCount) * 0.65);
   const gap = (plotW - barW * barCount) / (barCount + 1);
@@ -1192,7 +1219,8 @@ function drawPieChart(ctx, visual, w, h) {
   if (visual.title) ctx.fillText(visual.title, w / 2, 16);
 
   const slices = visual.slices || [];
-  const total = slices.reduce((sum, s) => sum + s.value, 0);
+  slices.forEach(s => { s.value = toNum(s.value); });
+  const total = slices.reduce((sum, s) => sum + s.value, 0) || 1;
   let startAngle = -Math.PI / 2;
 
   slices.forEach((slice, i) => {
@@ -1628,29 +1656,72 @@ async function confirmSubmit() {
   document.getElementById('submit-modal').classList.remove('active');
   stopTimer();
 
-  // Score (but don't log or show results yet — feedback first)
+  // Score
   calculateScores();
 
   // Reset feedback state
   state.feedbackRank = 0;
   state.feedbackText = '';
+  const feedbackCard = document.getElementById('results-feedback');
+  feedbackCard.style.display = 'none';
+  feedbackCard.classList.remove('visible', 'submitted');
   document.querySelectorAll('.star-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('feedback-text').value = '';
+  document.getElementById('feedback-thanks').style.display = 'none';
 
-  // Show feedback screen
-  showScreen('screen-feedback');
-}
-
-async function finishAndShowResults() {
-  // Capture feedback
-  state.feedbackText = document.getElementById('feedback-text').value.trim();
-
-  // Log (includes feedback)
+  // Log scores (feedback will be sent separately when submitted)
   await logResults();
 
   // Show results
   renderResults();
   showScreen('screen-results');
+
+  // Fade in feedback card after 20 seconds
+  setTimeout(() => {
+    feedbackCard.style.display = 'block';
+    // Force reflow before adding visible class for transition
+    feedbackCard.offsetHeight;
+    feedbackCard.classList.add('visible');
+  }, 20000);
+}
+
+async function submitFeedback() {
+  state.feedbackText = document.getElementById('feedback-text').value.trim();
+
+  // Send feedback as a lightweight row
+  if (APPS_SCRIPT_URL && APPS_SCRIPT_URL !== 'YOUR_APPS_SCRIPT_URL_HERE') {
+    try {
+      const progress = loadProgress();
+      const payload = {
+        student_hash: state.studentHash,
+        timestamp: new Date().toISOString(),
+        attempt_number: progress.attempts.length,
+        overall_score: '',
+        overall_pct: '',
+        proficiency_level: '',
+        earth_score: '',
+        life_score: '',
+        physical_score: '',
+        subtopic_scores: '',
+        items_missed: '',
+        feedback_rank: state.feedbackRank || '',
+        feedback_written: state.feedbackText || ''
+      };
+
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    } catch (e) {
+      console.warn('Could not log feedback:', e);
+    }
+  }
+
+  // Show thank you
+  document.getElementById('feedback-thanks').style.display = 'block';
+  document.getElementById('results-feedback').classList.add('submitted');
 }
 
 // ==================== INITIALIZATION ====================
@@ -1714,7 +1785,7 @@ async function init() {
     document.getElementById('submit-modal').classList.remove('active');
   });
 
-  // Feedback screen
+  // Feedback (in results page)
   document.querySelectorAll('.star-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const val = parseInt(btn.dataset.value);
@@ -1724,8 +1795,7 @@ async function init() {
       });
     });
   });
-  document.getElementById('btn-skip-feedback').addEventListener('click', finishAndShowResults);
-  document.getElementById('btn-submit-feedback').addEventListener('click', finishAndShowResults);
+  document.getElementById('btn-submit-feedback').addEventListener('click', submitFeedback);
 
   // Retake
   document.getElementById('btn-retake').addEventListener('click', () => {
