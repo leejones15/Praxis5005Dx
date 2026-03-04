@@ -975,10 +975,13 @@ function updateTimerDisplay() {
 // ==================== CHART RENDERING (for visual items) ====================
 
 function toLabel(val) {
-  if (typeof val === 'string') return val;
-  if (typeof val === 'number') return String(val);
-  if (val && typeof val === 'object') return val.label || val.text || val.name || JSON.stringify(val);
-  return String(val);
+  let label;
+  if (typeof val === 'string') label = val;
+  else if (typeof val === 'number') label = String(val);
+  else if (val && typeof val === 'object') label = val.label || val.text || val.name || JSON.stringify(val);
+  else label = String(val);
+  // Strip leading commas, semicolons, whitespace from malformed CSV labels
+  return label.replace(/^[,;\s]+/, '');
 }
 
 function toNum(val) {
@@ -1004,7 +1007,10 @@ function renderVisual(visual) {
   let w, h;
 
   if (visual.type === 'flow_diagram') {
-    w = 480; h = 100;
+    const hasDetail = (visual.nodes || []).some(n =>
+      (typeof n === 'string' && n.includes('\n')) || (typeof n === 'object' && n.detail)
+    );
+    w = 480; h = hasDetail ? 120 : 100;
   } else if (visual.type === 'pie_chart') {
     w = 360; h = 300;
   } else {
@@ -1038,6 +1044,16 @@ function drawLineChart(ctx, visual, w, h) {
   if (visual.title) ctx.fillText(visual.title, w / 2, 16);
 
   const xValues = visual.x_axis.values.map(toLabel);
+
+  // Guard against empty data
+  if (xValues.length === 0 || !visual.series || visual.series.length === 0) {
+    ctx.font = '12px IBM Plex Sans, sans-serif';
+    ctx.fillStyle = '#5a6270';
+    ctx.textAlign = 'center';
+    ctx.fillText('[Chart data unavailable]', w / 2, h / 2);
+    return;
+  }
+
   const xStep = plotW / (xValues.length - 1 || 1);
 
   // Find value ranges for each axis
@@ -1149,6 +1165,16 @@ function drawBarChart(ctx, visual, w, h) {
   const labels = (visual.x_axis ? visual.x_axis.values : (visual.labels || [])).map(toLabel);
   const rawValues = visual.series ? visual.series[0].values : (visual.values || []);
   const values = rawValues.map(toNum);
+
+  // Guard against empty data
+  if (labels.length === 0 || values.length === 0) {
+    ctx.font = '12px IBM Plex Sans, sans-serif';
+    ctx.fillStyle = '#5a6270';
+    ctx.textAlign = 'center';
+    ctx.fillText('[Chart data unavailable]', w / 2, h / 2);
+    return;
+  }
+
   const maxVal = Math.max(...values) * 1.15 || 1;
   const barCount = labels.length;
   const barW = Math.min(50, (plotW / barCount) * 0.65);
@@ -1218,7 +1244,7 @@ function drawPieChart(ctx, visual, w, h) {
   ctx.textAlign = 'center';
   if (visual.title) ctx.fillText(visual.title, w / 2, 16);
 
-  const slices = visual.slices || [];
+  const slices = visual.slices || visual.segments || [];
   slices.forEach(s => { s.value = toNum(s.value); });
   const total = slices.reduce((sum, s) => sum + s.value, 0) || 1;
   let startAngle = -Math.PI / 2;
@@ -1251,9 +1277,12 @@ function drawFlowDiagram(ctx, visual, w, h) {
   // Handle nodes as strings OR objects with label/text property
   const nodes = rawNodes.map(n => typeof n === 'string' ? n : (n.label || n.text || n.name || String(n)));
   const nodeW = 140;
-  const nodeH = 40;
+  // Detect if any node has multi-line content
+  const hasDetail = nodes.some(n => n.includes('\n'));
+  const nodeH = hasDetail ? 50 : 40;
   const totalW = nodes.length * nodeW + (nodes.length - 1) * 30;
   let x = (w - totalW) / 2;
+  if (x < 5) x = 5; // don't clip left edge
   const y = (h - nodeH) / 2;
 
   nodes.forEach((label, i) => {
@@ -1266,27 +1295,41 @@ function drawFlowDiagram(ctx, visual, w, h) {
     ctx.fill();
     ctx.stroke();
 
-    // Label — wrap if too long
+    // Label — handle explicit newlines first, then word-wrap
     ctx.fillStyle = '#1a1a2e';
-    ctx.font = '11px IBM Plex Sans, sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     const maxW = nodeW - 12;
-    if (ctx.measureText(label).width > maxW) {
-      ctx.font = '9px IBM Plex Sans, sans-serif';
-      const words = label.split(' ');
-      let lines = [''];
+    const cx = x + nodeW / 2;
+
+    // Split on explicit newlines first
+    const explicitLines = label.split('\n');
+    const allLines = [];
+    explicitLines.forEach((segment, si) => {
+      const fontSize = si === 0 ? '10px' : '9px';
+      ctx.font = `${fontSize} IBM Plex Sans, sans-serif`;
+      // Word-wrap each segment
+      const words = segment.split(' ');
+      let current = '';
       words.forEach(word => {
-        const test = lines[lines.length - 1] + (lines[lines.length - 1] ? ' ' : '') + word;
-        if (ctx.measureText(test).width > maxW && lines[lines.length - 1]) lines.push(word);
-        else lines[lines.length - 1] = test;
+        const test = current + (current ? ' ' : '') + word;
+        if (ctx.measureText(test).width > maxW && current) {
+          allLines.push({ text: current, font: `${fontSize} IBM Plex Sans, sans-serif`, color: si === 0 ? '#1a1a2e' : '#5a6270' });
+          current = word;
+        } else {
+          current = test;
+        }
       });
-      const lineH = 12;
-      const startY = y + nodeH / 2 - ((lines.length - 1) * lineH) / 2;
-      lines.forEach((line, li) => ctx.fillText(line, x + nodeW / 2, startY + li * lineH));
-    } else {
-      ctx.fillText(label, x + nodeW / 2, y + nodeH / 2);
-    }
+      if (current) allLines.push({ text: current, font: `${fontSize} IBM Plex Sans, sans-serif`, color: si === 0 ? '#1a1a2e' : '#5a6270' });
+    });
+
+    const lineH = 12;
+    const startY = y + nodeH / 2 - ((allLines.length - 1) * lineH) / 2;
+    allLines.forEach((line, li) => {
+      ctx.font = line.font;
+      ctx.fillStyle = line.color;
+      ctx.fillText(line.text, cx, startY + li * lineH);
+    });
 
     // Arrow
     if (i < nodes.length - 1) {
@@ -1676,13 +1719,10 @@ async function confirmSubmit() {
   renderResults();
   showScreen('screen-results');
 
-  // Fade in feedback card after 20 seconds
-  setTimeout(() => {
-    feedbackCard.style.display = 'block';
-    // Force reflow before adding visible class for transition
-    feedbackCard.offsetHeight;
-    feedbackCard.classList.add('visible');
-  }, 20000);
+  // Show feedback card immediately
+  feedbackCard.style.display = 'block';
+  feedbackCard.offsetHeight;
+  feedbackCard.classList.add('visible');
 }
 
 async function submitFeedback() {
