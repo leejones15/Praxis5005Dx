@@ -439,6 +439,26 @@ p:last-child { margin-bottom: 0; }
   font-size: 0.9rem;
 }
 .study-item:last-child { border-bottom: none; }
+.study-links {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.study-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-light);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+.study-link:hover { background: #dde5ff; }
 .study-priority {
   display: inline-block;
   padding: 2px 8px;
@@ -489,6 +509,24 @@ p:last-child { margin-bottom: 0; }
 .modal h2 { margin-bottom: 8px; }
 .modal p { color: var(--text-secondary); font-size: 0.9rem; }
 .modal .btn-group { justify-content: flex-end; }
+
+/* ========== STAR RATING ========== */
+.star-rating {
+  display: flex;
+  gap: 4px;
+}
+.star-btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--border);
+  cursor: pointer;
+  padding: 2px 4px;
+  transition: color var(--transition), transform var(--transition);
+  line-height: 1;
+}
+.star-btn:hover { transform: scale(1.15); }
+.star-btn.active { color: #f59e0b; }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 700px) {
@@ -580,6 +618,35 @@ p:last-child { margin-bottom: 0; }
           <button class="btn btn-primary" id="btn-next">Next →</button>
           <button class="btn btn-primary" id="btn-submit-test" style="display:none">Submit</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FEEDBACK PAGE ==================== -->
+  <div id="screen-feedback" class="screen">
+    <div class="card" style="max-width:560px;margin:40px auto">
+      <h2>Before your results...</h2>
+      <p class="text-secondary">Your responses have been saved. Before we show your report, we'd love a quick bit of feedback to help improve this tool. This is completely optional.</p>
+
+      <div style="margin:20px 0">
+        <label class="text-small" style="font-weight:600;display:block;margin-bottom:8px">How helpful was this diagnostic?</label>
+        <div class="star-rating" id="star-rating">
+          <button class="star-btn" data-value="1" aria-label="1 star">★</button>
+          <button class="star-btn" data-value="2" aria-label="2 stars">★</button>
+          <button class="star-btn" data-value="3" aria-label="3 stars">★</button>
+          <button class="star-btn" data-value="4" aria-label="4 stars">★</button>
+          <button class="star-btn" data-value="5" aria-label="5 stars">★</button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="feedback-text">Anything else you'd like to share?</label>
+        <textarea id="feedback-text" class="input-field" rows="3" placeholder="Questions that were confusing, topics you felt unprepared for, suggestions..." style="resize:vertical"></textarea>
+      </div>
+
+      <div class="btn-group" style="justify-content:space-between">
+        <button class="btn btn-secondary" id="btn-skip-feedback">Skip — show results</button>
+        <button class="btn btn-primary" id="btn-submit-feedback">Submit &amp; see results</button>
       </div>
     </div>
   </div>
@@ -676,6 +743,74 @@ Object.keys(SUBTOPIC_LABELS).forEach(st => {
   else DOMAIN_FOR_SUBTOPIC[st] = 'Physical Science';
 });
 
+const STUDY_RESOURCES = {
+  'ES-1': [
+    { label: 'Khan Academy — The Geosphere', url: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere' },
+    { label: 'Quizlet — Praxis 5005 Earth & Space', url: 'https://quizlet.com/404475062/praxis-5005-earth-and-space-science-flash-cards/' }
+  ],
+  'ES-2': [
+    { label: 'Khan Academy — The Geosphere', url: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere' },
+    { label: 'Quizlet — Praxis 5005 Earth Science', url: 'https://quizlet.com/294910567/praxis-5005-earth-science-flash-cards/' }
+  ],
+  'ES-3': [
+    { label: 'Khan Academy — Earth\'s History', url: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earths-history' },
+    { label: 'Quizlet — Praxis 5005 Earth & Space', url: 'https://quizlet.com/404475062/praxis-5005-earth-and-space-science-flash-cards/' }
+  ],
+  'ES-4': [
+    { label: 'Khan Academy — Earth in Space', url: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-in-space' },
+    { label: 'Quizlet — Earth & Space 5005', url: 'https://quizlet.com/519461983/earth-space-science-5005-praxis-flash-cards/' }
+  ],
+  'ES-5': [
+    { label: 'Khan Academy — Seasons', url: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-earth-sun-moon-system/x87d03b443efbea0a:seasons/v/seasons-ms' },
+    { label: 'Khan Academy — Moon Phases', url: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-earth-sun-moon-system/x87d03b443efbea0a:the-moon-and-its-motions/v/phases-of-the-moon' },
+    { label: 'Khan Academy — Weather & Climate', url: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:weather-and-climate' },
+    { label: 'Quizlet — Praxis 5005 Science', url: 'https://quizlet.com/87410891/praxis-5005-science-flash-cards/' }
+  ],
+  'LS-1': [
+    { label: 'Khan Academy — Middle School Biology', url: 'https://www.khanacademy.org/science/ms-biology' },
+    { label: 'Khan Academy — Matter & Energy in Organisms', url: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms' },
+    { label: 'Quizlet — Praxis 5005 Life Science', url: 'https://quizlet.com/294911002/praxis-5005-science-life-science-flash-cards/' }
+  ],
+  'LS-2': [
+    { label: 'Khan Academy — Inheritance & Variation', url: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation' },
+    { label: 'Khan Academy — Classical Genetics', url: 'https://www.khanacademy.org/science/high-school-biology/hs-classical-genetics' },
+    { label: 'Quizlet — Praxis 5005 Life Science', url: 'https://quizlet.com/294911002/praxis-5005-science-life-science-flash-cards/' }
+  ],
+  'LS-3': [
+    { label: 'Khan Academy — Middle School Biology', url: 'https://www.khanacademy.org/science/ms-biology' },
+    { label: 'Quizlet — Praxis 5005 Science', url: 'https://quizlet.com/519158117/praxis-5005-science-flash-cards/' }
+  ],
+  'LS-4': [
+    { label: 'Khan Academy — Middle School Biology', url: 'https://www.khanacademy.org/science/ms-biology' },
+    { label: 'Quizlet — Science 5005 Study Guide', url: 'https://quizlet.com/596643881/science-5005-praxis-study-guide-flash-cards/' }
+  ],
+  'LS-5': [
+    { label: 'Khan Academy — Ecosystems & Biodiversity', url: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity' },
+    { label: 'Quizlet — Praxis 5005 Science', url: 'https://quizlet.com/519158117/praxis-5005-science-flash-cards/' }
+  ],
+  'LS-6': [
+    { label: 'Quizlet — Science 5005 Study Guide', url: 'https://quizlet.com/596643881/science-5005-praxis-study-guide-flash-cards/' },
+    { label: 'Quizlet — Praxis 5005 ETS Practice', url: 'https://quizlet.com/441259907/praxis-5005-science-ets-practice-test-flash-cards/' }
+  ],
+  'PS-1': [
+    { label: 'Khan Academy — Middle School Chemistry', url: 'https://www.khanacademy.org/science/ms-chemistry' },
+    { label: 'Khan Academy — Physical Properties of Matter', url: 'https://www.khanacademy.org/science/ms-chemistry/xc370bc422b7f75fc:physical-properties-of-matter' },
+    { label: 'Quizlet — Praxis 5005 Physical Science', url: 'https://quizlet.com/605822980/praxis-5005-physical-science-study-guide-flash-cards/' }
+  ],
+  'PS-2': [
+    { label: 'Khan Academy — Movement & Forces', url: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:movement-and-forces' },
+    { label: 'Quizlet — Praxis 5005 Physical Science', url: 'https://quizlet.com/214793327/praxis-5005-physical-science-flash-cards/' }
+  ],
+  'PS-3': [
+    { label: 'Khan Academy — Energy', url: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy' },
+    { label: 'Quizlet — Praxis 5005 Physical Science Guide', url: 'https://quizlet.com/605822980/praxis-5005-physical-science-study-guide-flash-cards/' }
+  ],
+  'PS-4': [
+    { label: 'Khan Academy — Waves', url: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves' },
+    { label: 'Quizlet — Praxis 5005 Physical Science', url: 'https://quizlet.com/214793327/praxis-5005-physical-science-flash-cards/' }
+  ]
+};
+
 const PROFICIENCY_LEVELS = [
   { level: 1, label: 'Needs Significant Review', cssClass: 'prof-1', color: '#be123c', min: 0, max: 54.99 },
   { level: 2, label: 'Developing', cssClass: 'prof-2', color: '#d97706', min: 55, max: 69.99 },
@@ -697,7 +832,9 @@ const state = {
   timerInterval: null,
   startTime: null,
   scores: null,
-  previousAttempt: null
+  previousAttempt: null,
+  feedbackRank: 0,
+  feedbackText: ''
 };
 
 // ==================== CRYPTO ====================
@@ -1411,12 +1548,17 @@ function renderStudyPlan(r) {
   recommendations.forEach((rec, i) => {
     const priorityLevel = i < 2 ? 'high' : (i < 5 ? 'medium' : 'low');
     const priorityLabel = i < 2 ? 'High' : (i < 5 ? 'Medium' : 'Low');
+    const resources = STUDY_RESOURCES[rec.st] || [];
+    const linksHtml = resources.length > 0
+      ? `<div class="study-links">${resources.map(r => `<a class="study-link" href="${r.url}" target="_blank" rel="noopener">${r.label} ↗</a>`).join('')}</div>`
+      : '';
     const div = document.createElement('div');
     div.className = 'study-item';
     div.innerHTML = `
       <span class="study-priority priority-${priorityLevel}">${priorityLabel}</span>
       <strong>${SUBTOPIC_LABELS[rec.st]}</strong> (${rec.st})
       <span class="text-small text-secondary"> — missed ${rec.missed} of ${rec.total} in ${rec.domain}</span>
+      ${linksHtml}
     `;
     studyList.appendChild(div);
   });
@@ -1444,7 +1586,9 @@ async function logResults() {
     life_score: r.domains['Life Science'].correct,
     physical_score: r.domains['Physical Science'].correct,
     subtopic_scores: JSON.stringify(subtopicScores),
-    items_missed: JSON.stringify(r.itemsMissed)
+    items_missed: JSON.stringify(r.itemsMissed),
+    feedback_rank: state.feedbackRank || '',
+    feedback_written: state.feedbackText || ''
   };
 
   // Save locally
@@ -1484,10 +1628,24 @@ async function confirmSubmit() {
   document.getElementById('submit-modal').classList.remove('active');
   stopTimer();
 
-  // Score
+  // Score (but don't log or show results yet — feedback first)
   calculateScores();
 
-  // Log
+  // Reset feedback state
+  state.feedbackRank = 0;
+  state.feedbackText = '';
+  document.querySelectorAll('.star-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('feedback-text').value = '';
+
+  // Show feedback screen
+  showScreen('screen-feedback');
+}
+
+async function finishAndShowResults() {
+  // Capture feedback
+  state.feedbackText = document.getElementById('feedback-text').value.trim();
+
+  // Log (includes feedback)
   await logResults();
 
   // Show results
@@ -1555,6 +1713,19 @@ async function init() {
   document.getElementById('btn-modal-cancel').addEventListener('click', () => {
     document.getElementById('submit-modal').classList.remove('active');
   });
+
+  // Feedback screen
+  document.querySelectorAll('.star-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const val = parseInt(btn.dataset.value);
+      state.feedbackRank = val;
+      document.querySelectorAll('.star-btn').forEach((b, i) => {
+        b.classList.toggle('active', i < val);
+      });
+    });
+  });
+  document.getElementById('btn-skip-feedback').addEventListener('click', finishAndShowResults);
+  document.getElementById('btn-submit-feedback').addEventListener('click', finishAndShowResults);
 
   // Retake
   document.getElementById('btn-retake').addEventListener('click', () => {
