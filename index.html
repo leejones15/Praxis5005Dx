@@ -1657,9 +1657,7 @@ async function logResults() {
     life_score: r.domains['Life Science'].correct,
     physical_score: r.domains['Physical Science'].correct,
     subtopic_scores: JSON.stringify(subtopicScores),
-    items_missed: JSON.stringify(r.itemsMissed),
-    feedback_rank: state.feedbackRank || '',
-    feedback_written: state.feedbackText || ''
+    items_missed: JSON.stringify(r.itemsMissed)
   };
 
   // Save locally
@@ -1733,17 +1731,10 @@ async function submitFeedback() {
     try {
       const progress = loadProgress();
       const payload = {
+        type: 'feedback',
         student_hash: state.studentHash,
         timestamp: new Date().toISOString(),
         attempt_number: progress.attempts.length,
-        overall_score: '',
-        overall_pct: '',
-        proficiency_level: '',
-        earth_score: '',
-        life_score: '',
-        physical_score: '',
-        subtopic_scores: '',
-        items_missed: '',
         feedback_rank: state.feedbackRank || '',
         feedback_written: state.feedbackText || ''
       };
